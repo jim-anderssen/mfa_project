@@ -4,6 +4,8 @@ This is a repository for analysing material/waste stocks and flows through Euros
 
 The overarching goal is to provide highly-detailed statistics for generation, treatment, shipment of waste, which will allow for data-driven decision-making for recovery technology investments.
 
+See data/interim for first examples of the type of data intended to be produced in this repo.
+
 
 ## Project Organization (template)
 
