@@ -1,0 +1,838 @@
+Top_Level_Code;Top_Level_Description;Middle_Level_Code;Middle_Level_Description;Bottom_Level_Code;Bottom_Level_Description;Hazardous_Flag;LoW_Code
+01;Chemical compound wastes;01.1;Spent solvents;01.11;Spent solvents (Halogenated);1;07 01 03*
+01;Chemical compound wastes;01.1;Spent solvents;01.11;Spent solvents (Halogenated);1;07 02 03*
+01;Chemical compound wastes;01.1;Spent solvents;01.11;Spent solvents (Halogenated);1;07 03 03*
+01;Chemical compound wastes;01.1;Spent solvents;01.11;Spent solvents (Halogenated);1;07 04 03*
+01;Chemical compound wastes;01.1;Spent solvents;01.11;Spent solvents (Halogenated);1;07 05 03*
+01;Chemical compound wastes;01.1;Spent solvents;01.11;Spent solvents (Halogenated);1;07 06 03*
+01;Chemical compound wastes;01.1;Spent solvents;01.11;Spent solvents (Halogenated);1;07 07 03*
+01;Chemical compound wastes;01.1;Spent solvents;01.11;Spent solvents (Halogenated);1;14 06 01*
+01;Chemical compound wastes;01.1;Spent solvents;01.11;Spent solvents (Halogenated);1;14 06 02*
+01;Chemical compound wastes;01.1;Spent solvents;01.11;Spent solvents (Halogenated);1;14 06 04*
+01;Chemical compound wastes;01.1;Spent solvents;01.12;Spent solvents (Non-halogenated);1;07 01 04*
+01;Chemical compound wastes;01.1;Spent solvents;01.12;Spent solvents (Non-halogenated);1;07 02 04*
+01;Chemical compound wastes;01.1;Spent solvents;01.12;Spent solvents (Non-halogenated);1;07 03 04*
+01;Chemical compound wastes;01.1;Spent solvents;01.12;Spent solvents (Non-halogenated);1;07 04 04*
+01;Chemical compound wastes;01.1;Spent solvents;01.12;Spent solvents (Non-halogenated);1;07 05 04*
+01;Chemical compound wastes;01.1;Spent solvents;01.12;Spent solvents (Non-halogenated);1;07 06 04*
+01;Chemical compound wastes;01.1;Spent solvents;01.12;Spent solvents (Non-halogenated);1;07 07 04*
+01;Chemical compound wastes;01.1;Spent solvents;01.12;Spent solvents (Non-halogenated);1;14 06 03*
+01;Chemical compound wastes;01.1;Spent solvents;01.12;Spent solvents (Non-halogenated);1;14 06 05*
+01;Chemical compound wastes;01.1;Spent solvents;01.12;Spent solvents (Non-halogenated);1;20 01 13*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.21;Acid wastes;1;06 01 01*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.21;Acid wastes;1;06 01 02*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.21;Acid wastes;1;06 01 03*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.21;Acid wastes;1;06 01 04*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.21;Acid wastes;1;06 01 05*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.21;Acid wastes;1;06 01 06*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.21;Acid wastes;1;06 07 04*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.21;Acid wastes;1;08 03 16*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.21;Acid wastes;1;09 01 04*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.21;Acid wastes;1;09 01 05*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.21;Acid wastes;1;10 01 09*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.21;Acid wastes;1;11 01 05*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.21;Acid wastes;1;11 01 06*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.21;Acid wastes;1;16 06 06*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.21;Acid wastes;1;20 01 14*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.22;Alkaline wastes;0;03 03 09
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.22;Alkaline wastes;0;11 01 14
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.22;Alkaline wastes;1;05 01 11*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.22;Alkaline wastes;1;06 02 01*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.22;Alkaline wastes;1;06 02 03*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.22;Alkaline wastes;1;06 02 04*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.22;Alkaline wastes;1;06 02 05*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.22;Alkaline wastes;1;09 01 01*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.22;Alkaline wastes;1;09 01 02*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.22;Alkaline wastes;1;09 01 03*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.22;Alkaline wastes;1;11 01 07*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.22;Alkaline wastes;1;11 01 13*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.22;Alkaline wastes;1;11 03 01*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.22;Alkaline wastes;1;19 11 04*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.22;Alkaline wastes;1;20 01 15*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.24;Other saline wastes;0;05 01 16
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.24;Other saline wastes;0;05 07 02
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.24;Other saline wastes;0;06 03 14
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.24;Other saline wastes;0;06 03 16
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.24;Other saline wastes;0;06 06 03
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.24;Other saline wastes;0;11 02 06
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.24;Other saline wastes;1;06 03 11*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.24;Other saline wastes;1;06 03 13*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.24;Other saline wastes;1;06 03 15*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.24;Other saline wastes;1;06 04 03*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.24;Other saline wastes;1;06 04 04*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.24;Other saline wastes;1;06 04 05*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.24;Other saline wastes;1;06 06 02*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.24;Other saline wastes;1;10 03 08*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.24;Other saline wastes;1;10 04 03*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.24;Other saline wastes;1;11 01 08*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.24;Other saline wastes;1;11 02 05*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.24;Other saline wastes;1;11 03 02*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.24;Other saline wastes;1;11 05 04*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.24;Other saline wastes;1;16 09 01*
+01;Chemical compound wastes;01.2;Acid alkaline or saline wastes;01.24;Other saline wastes;1;16 09 02*
+01;Chemical compound wastes;01.3;Used oils;01.31;Used motor oils;1;13 02 04*
+01;Chemical compound wastes;01.3;Used oils;01.31;Used motor oils;1;13 02 05*
+01;Chemical compound wastes;01.3;Used oils;01.31;Used motor oils;1;13 02 06*
+01;Chemical compound wastes;01.3;Used oils;01.31;Used motor oils;1;13 02 07*
+01;Chemical compound wastes;01.3;Used oils;01.31;Used motor oils;1;13 02 08*
+01;Chemical compound wastes;01.3;Used oils;01.32;Other used oils;1;05 01 02*
+01;Chemical compound wastes;01.3;Used oils;01.32;Other used oils;1;05 01 03*
+01;Chemical compound wastes;01.3;Used oils;01.32;Other used oils;1;05 01 04*
+01;Chemical compound wastes;01.3;Used oils;01.32;Other used oils;1;05 01 12*
+01;Chemical compound wastes;01.3;Used oils;01.32;Other used oils;1;08 03 19*
+01;Chemical compound wastes;01.3;Used oils;01.32;Other used oils;1;08 04 17*
+01;Chemical compound wastes;01.3;Used oils;01.32;Other used oils;1;12 01 06*
+01;Chemical compound wastes;01.3;Used oils;01.32;Other used oils;1;12 01 07*
+01;Chemical compound wastes;01.3;Used oils;01.32;Other used oils;1;12 01 08*
+01;Chemical compound wastes;01.3;Used oils;01.32;Other used oils;1;12 01 09*
+01;Chemical compound wastes;01.3;Used oils;01.32;Other used oils;1;12 01 10*
+01;Chemical compound wastes;01.3;Used oils;01.32;Other used oils;1;12 01 12*
+01;Chemical compound wastes;01.3;Used oils;01.32;Other used oils;1;12 01 18*
+01;Chemical compound wastes;01.3;Used oils;01.32;Other used oils;1;12 01 19*
+01;Chemical compound wastes;01.3;Used oils;01.32;Other used oils;1;13 01 04*
+01;Chemical compound wastes;01.3;Used oils;01.32;Other used oils;1;13 01 05*
+01;Chemical compound wastes;01.3;Used oils;01.32;Other used oils;1;13 01 09*
+01;Chemical compound wastes;01.3;Used oils;01.32;Other used oils;1;13 01 10*
+01;Chemical compound wastes;01.3;Used oils;01.32;Other used oils;1;13 01 11*
+01;Chemical compound wastes;01.3;Used oils;01.32;Other used oils;1;13 01 12*
+01;Chemical compound wastes;01.3;Used oils;01.32;Other used oils;1;13 01 13*
+01;Chemical compound wastes;01.3;Used oils;01.32;Other used oils;1;13 03 06*
+01;Chemical compound wastes;01.3;Used oils;01.32;Other used oils;1;13 03 07*
+01;Chemical compound wastes;01.3;Used oils;01.32;Other used oils;1;13 03 08*
+01;Chemical compound wastes;01.3;Used oils;01.32;Other used oils;1;13 03 09*
+01;Chemical compound wastes;01.3;Used oils;01.32;Other used oils;1;13 03 10*
+01;Chemical compound wastes;01.3;Used oils;01.32;Other used oils;1;13 05 06*
+01;Chemical compound wastes;01.3;Used oils;01.32;Other used oils;1;20 01 26*
+01;Chemical compound wastes;01.4;Spent chemical catalysts;01.41;Spent chemical catalysts;0;16 08 01
+01;Chemical compound wastes;01.4;Spent chemical catalysts;01.41;Spent chemical catalysts;0;16 08 03
+01;Chemical compound wastes;01.4;Spent chemical catalysts;01.41;Spent chemical catalysts;0;16 08 04
+01;Chemical compound wastes;01.4;Spent chemical catalysts;01.41;Spent chemical catalysts;1;16 08 02*
+01;Chemical compound wastes;01.4;Spent chemical catalysts;01.41;Spent chemical catalysts;1;16 08 05*
+01;Chemical compound wastes;01.4;Spent chemical catalysts;01.41;Spent chemical catalysts;1;16 08 06*
+01;Chemical compound wastes;01.4;Spent chemical catalysts;01.41;Spent chemical catalysts;1;16 08 07*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.11;Agrochemical product wastes;0;02 01 09
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.11;Agrochemical product wastes;1;02 01 08*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.11;Agrochemical product wastes;1;06 13 01*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.11;Agrochemical product wastes;1;20 01 19*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.12;Unused medicines;0;07 05 14
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.12;Unused medicines;0;18 01 09
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.12;Unused medicines;0;18 02 08
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.12;Unused medicines;0;20 01 32
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.12;Unused medicines;1;07 05 13*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.12;Unused medicines;1;18 01 08*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.12;Unused medicines;1;18 02 07*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.12;Unused medicines;1;20 01 31*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.13;Paints varnish inks and adhesive wastes;0;04 02 17
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.13;Paints varnish inks and adhesive wastes;0;08 01 12
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.13;Paints varnish inks and adhesive wastes;0;08 01 14
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.13;Paints varnish inks and adhesive wastes;0;08 01 16
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.13;Paints varnish inks and adhesive wastes;0;08 01 18
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.13;Paints varnish inks and adhesive wastes;0;08 01 20
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.13;Paints varnish inks and adhesive wastes;0;08 02 01
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.13;Paints varnish inks and adhesive wastes;0;08 03 07
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.13;Paints varnish inks and adhesive wastes;0;08 03 08
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.13;Paints varnish inks and adhesive wastes;0;08 03 13
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.13;Paints varnish inks and adhesive wastes;0;08 03 15
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.13;Paints varnish inks and adhesive wastes;0;08 03 18
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.13;Paints varnish inks and adhesive wastes;0;08 04 10
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.13;Paints varnish inks and adhesive wastes;0;08 04 12
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.13;Paints varnish inks and adhesive wastes;0;08 04 14
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.13;Paints varnish inks and adhesive wastes;0;08 04 16
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.13;Paints varnish inks and adhesive wastes;0;20 01 28
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.13;Paints varnish inks and adhesive wastes;1;04 02 16*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.13;Paints varnish inks and adhesive wastes;1;08 01 11*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.13;Paints varnish inks and adhesive wastes;1;08 01 13*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.13;Paints varnish inks and adhesive wastes;1;08 01 15*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.13;Paints varnish inks and adhesive wastes;1;08 01 17*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.13;Paints varnish inks and adhesive wastes;1;08 01 19*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.13;Paints varnish inks and adhesive wastes;1;08 03 12*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.13;Paints varnish inks and adhesive wastes;1;08 03 14*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.13;Paints varnish inks and adhesive wastes;1;08 03 17*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.13;Paints varnish inks and adhesive wastes;1;08 04 09*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.13;Paints varnish inks and adhesive wastes;1;08 04 11*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.13;Paints varnish inks and adhesive wastes;1;08 04 13*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.13;Paints varnish inks and adhesive wastes;1;08 04 15*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.13;Paints varnish inks and adhesive wastes;1;20 01 27*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;0;02 07 03
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;0;03 02 99
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;0;04 01 09
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;0;04 02 15
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;0;07 02 15
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;0;07 02 17
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;0;10 09 16
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;0;10 10 14
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;0;10 10 16
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;0;16 01 15
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;0;16 05 05
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;0;18 01 07
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;0;18 02 06
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;0;20 01 30
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;1;03 02 01*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;1;03 02 02*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;1;03 02 03*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;1;03 02 04*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;1;03 02 05*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;1;04 02 14*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;1;05 07 01*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;1;06 08 02*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;1;06 10 02*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;1;07 02 14*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;1;07 02 16*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;1;07 04 13*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;1;08 01 21*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;1;08 05 01*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;1;10 09 13*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;1;10 09 15*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;1;10 10 13*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;1;10 10 15*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;1;11 01 16*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;1;11 01 98*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;1;16 01 13*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;1;16 01 14*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;1;16 05 04*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;1;16 09 03*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;1;16 09 04*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;1;18 01 06*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;1;18 02 05*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;1;20 01 17*
+02;Chemical preparation wastes;02.1;Off-specification chemical wastes;02.14;Other chemical preparation wastes;1;20 01 29*
+02;Chemical preparation wastes;02.2;Unused explosives;02.21;Waste explosives and pyrotechnical products;1;16 04 02*
+02;Chemical preparation wastes;02.2;Unused explosives;02.21;Waste explosives and pyrotechnical products;1;16 04 03*
+02;Chemical preparation wastes;02.2;Unused explosives;02.22;Waste ammunition;1;16 04 01*
+02;Chemical preparation wastes;02.3;Mixed chemical wastes;02.31;Minor mixed chemical wastes;0;16 05 09
+02;Chemical preparation wastes;02.3;Mixed chemical wastes;02.31;Minor mixed chemical wastes;1;16 05 06*
+02;Chemical preparation wastes;02.3;Mixed chemical wastes;02.31;Minor mixed chemical wastes;1;16 05 07*
+02;Chemical preparation wastes;02.3;Mixed chemical wastes;02.31;Minor mixed chemical wastes;1;16 05 08*
+02;Chemical preparation wastes;02.3;Mixed chemical wastes;02.33;Packaging polluted by hazardous substances;1;15 01 10*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.11;Tars and carbonaceous wastes;0;05 01 17
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.11;Tars and carbonaceous wastes;0;06 13 03
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.11;Tars and carbonaceous wastes;0;10 01 25
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.11;Tars and carbonaceous wastes;0;10 03 02
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.11;Tars and carbonaceous wastes;0;10 03 18
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.11;Tars and carbonaceous wastes;0;10 08 13
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.11;Tars and carbonaceous wastes;0;10 08 14
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.11;Tars and carbonaceous wastes;0;11 02 03
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.11;Tars and carbonaceous wastes;0;20 01 41
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.11;Tars and carbonaceous wastes;1;05 01 07*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.11;Tars and carbonaceous wastes;1;05 01 08*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.11;Tars and carbonaceous wastes;1;05 06 01*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.11;Tars and carbonaceous wastes;1;05 06 03*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.11;Tars and carbonaceous wastes;1;06 13 05*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.11;Tars and carbonaceous wastes;1;10 03 17*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.11;Tars and carbonaceous wastes;1;10 08 12*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.11;Tars and carbonaceous wastes;1;19 11 02*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.12;Oils/water emulsions sludges;1;05 01 06*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.12;Oils/water emulsions sludges;1;13 04 01*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.12;Oils/water emulsions sludges;1;13 04 02*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.12;Oils/water emulsions sludges;1;13 04 03*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.12;Oils/water emulsions sludges;1;13 05 01*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.12;Oils/water emulsions sludges;1;13 05 02*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.12;Oils/water emulsions sludges;1;13 05 03*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.12;Oils/water emulsions sludges;1;13 05 07*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.12;Oils/water emulsions sludges;1;13 05 08*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.12;Oils/water emulsions sludges;1;13 07 01*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.12;Oils/water emulsions sludges;1;13 07 02*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.12;Oils/water emulsions sludges;1;13 07 03*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.12;Oils/water emulsions sludges;1;13 08 01*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.12;Oils/water emulsions sludges;1;13 08 02*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.12;Oils/water emulsions sludges;1;13 08 99*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.12;Oils/water emulsions sludges;1;16 07 09*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.12;Oils/water emulsions sludges;1;19 02 07*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.13;Chemical reaction residues;0;03 03 02
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.13;Chemical reaction residues;0;04 01 04
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.13;Chemical reaction residues;0;04 01 05
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.13;Chemical reaction residues;0;11 01 12
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.13;Chemical reaction residues;1;04 01 03*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.13;Chemical reaction residues;1;06 07 03*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.13;Chemical reaction residues;1;07 01 01*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.13;Chemical reaction residues;1;07 01 07*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.13;Chemical reaction residues;1;07 01 08*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.13;Chemical reaction residues;1;07 02 01*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.13;Chemical reaction residues;1;07 02 07*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.13;Chemical reaction residues;1;07 02 08*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.13;Chemical reaction residues;1;07 03 01*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.13;Chemical reaction residues;1;07 03 07*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.13;Chemical reaction residues;1;07 03 08*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.13;Chemical reaction residues;1;07 04 01*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.13;Chemical reaction residues;1;07 04 07*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.13;Chemical reaction residues;1;07 04 08*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.13;Chemical reaction residues;1;07 05 01*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.13;Chemical reaction residues;1;07 05 07*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.13;Chemical reaction residues;1;07 05 08*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.13;Chemical reaction residues;1;07 06 01*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.13;Chemical reaction residues;1;07 06 07*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.13;Chemical reaction residues;1;07 06 08*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.13;Chemical reaction residues;1;07 07 01*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.13;Chemical reaction residues;1;07 07 07*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.13;Chemical reaction residues;1;07 07 08*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.13;Chemical reaction residues;1;09 01 13*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.13;Chemical reaction residues;1;11 01 11*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.14;Spent filtration and absorbent materials;0;15 02 03
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.14;Spent filtration and absorbent materials;0;19 09 03
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.14;Spent filtration and absorbent materials;0;19 09 04
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.14;Spent filtration and absorbent materials;0;19 09 05
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.14;Spent filtration and absorbent materials;0;19 09 06
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.14;Spent filtration and absorbent materials;1;05 01 15*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.14;Spent filtration and absorbent materials;1;06 07 02*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.14;Spent filtration and absorbent materials;1;06 13 02*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.14;Spent filtration and absorbent materials;1;07 01 09*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.14;Spent filtration and absorbent materials;1;07 01 10*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.14;Spent filtration and absorbent materials;1;07 02 09*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.14;Spent filtration and absorbent materials;1;07 02 10*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.14;Spent filtration and absorbent materials;1;07 03 09*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.14;Spent filtration and absorbent materials;1;07 03 10*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.14;Spent filtration and absorbent materials;1;07 04 09*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.14;Spent filtration and absorbent materials;1;07 04 10*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.14;Spent filtration and absorbent materials;1;07 05 09*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.14;Spent filtration and absorbent materials;1;07 05 10*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.14;Spent filtration and absorbent materials;1;07 06 09*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.14;Spent filtration and absorbent materials;1;07 06 10*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.14;Spent filtration and absorbent materials;1;07 07 09*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.14;Spent filtration and absorbent materials;1;07 07 10*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.14;Spent filtration and absorbent materials;1;11 01 15*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.14;Spent filtration and absorbent materials;1;15 02 02*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.14;Spent filtration and absorbent materials;1;19 01 10*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.14;Spent filtration and absorbent materials;1;19 08 06*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.14;Spent filtration and absorbent materials;1;19 08 07*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.14;Spent filtration and absorbent materials;1;19 08 08*
+03;Other chemical wastes;03.1;Chemical deposits and residues;03.14;Spent filtration and absorbent materials;1;19 11 01*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;03 03 05
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;03 03 10
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;04 01 06
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;04 01 07
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;04 02 20
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;05 01 10
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;05 01 14
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;05 06 04
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;06 05 03
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;07 01 12
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;07 02 12
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;07 03 12
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;07 04 12
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;07 05 12
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;07 06 12
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;07 07 12
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;10 01 21
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;10 01 23
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;10 01 26
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;10 02 12
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;10 02 15
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;10 03 28
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;10 04 10
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;10 05 09
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;10 06 10
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;10 07 08
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;10 08 20
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;10 11 20
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;10 12 13
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;11 01 10
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;12 01 15
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;16 10 02
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;16 10 04
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;19 08 12
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;19 08 14
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;19 13 04
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;19 13 06
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;0;19 13 08
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;1;04 02 19*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;1;05 01 09*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;1;06 05 02*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;1;07 01 11*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;1;07 02 11*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;1;07 03 11*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;1;07 04 11*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;1;07 05 11*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;1;07 06 11*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;1;07 07 11*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;1;10 01 20*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;1;10 01 22*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;1;10 11 19*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;1;11 01 09*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;1;11 02 07*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;1;12 01 14*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;1;16 10 01*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;1;16 10 03*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;1;19 08 11*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;1;19 08 13*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;1;19 13 03*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;1;19 13 05*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.21;Sludges from industrial processes and effluent treatment;1;19 13 07*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.22;Sludges containing hydrocarbons;1;01 05 05*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.22;Sludges containing hydrocarbons;1;10 02 11*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.22;Sludges containing hydrocarbons;1;10 03 27*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.22;Sludges containing hydrocarbons;1;10 04 09*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.22;Sludges containing hydrocarbons;1;10 05 08*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.22;Sludges containing hydrocarbons;1;10 06 09*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.22;Sludges containing hydrocarbons;1;10 07 07*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.22;Sludges containing hydrocarbons;1;10 08 19*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.22;Sludges containing hydrocarbons;1;12 03 01*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.22;Sludges containing hydrocarbons;1;12 03 02*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.22;Sludges containing hydrocarbons;1;16 07 08*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.22;Sludges containing hydrocarbons;1;19 08 10*
+03;Other chemical wastes;03.2;Industrial effluent sludges;03.22;Sludges containing hydrocarbons;1;19 11 03*
+03;Other chemical wastes;03.3;Sludges and liquid wastes from waste treatment;03.31;Sludges and liquid wastes from waste treatment;0;19 02 06
+03;Other chemical wastes;03.3;Sludges and liquid wastes from waste treatment;03.31;Sludges and liquid wastes from waste treatment;0;19 04 04
+03;Other chemical wastes;03.3;Sludges and liquid wastes from waste treatment;03.31;Sludges and liquid wastes from waste treatment;0;19 06 03
+03;Other chemical wastes;03.3;Sludges and liquid wastes from waste treatment;03.31;Sludges and liquid wastes from waste treatment;0;19 06 04
+03;Other chemical wastes;03.3;Sludges and liquid wastes from waste treatment;03.31;Sludges and liquid wastes from waste treatment;0;19 06 05
+03;Other chemical wastes;03.3;Sludges and liquid wastes from waste treatment;03.31;Sludges and liquid wastes from waste treatment;0;19 06 06
+03;Other chemical wastes;03.3;Sludges and liquid wastes from waste treatment;03.31;Sludges and liquid wastes from waste treatment;0;19 07 03
+03;Other chemical wastes;03.3;Sludges and liquid wastes from waste treatment;03.31;Sludges and liquid wastes from waste treatment;0;19 11 06
+03;Other chemical wastes;03.3;Sludges and liquid wastes from waste treatment;03.31;Sludges and liquid wastes from waste treatment;1;19 02 05*
+03;Other chemical wastes;03.3;Sludges and liquid wastes from waste treatment;03.31;Sludges and liquid wastes from waste treatment;1;19 02 08*
+03;Other chemical wastes;03.3;Sludges and liquid wastes from waste treatment;03.31;Sludges and liquid wastes from waste treatment;1;19 02 11*
+03;Other chemical wastes;03.3;Sludges and liquid wastes from waste treatment;03.31;Sludges and liquid wastes from waste treatment;1;19 07 02*
+03;Other chemical wastes;03.3;Sludges and liquid wastes from waste treatment;03.31;Sludges and liquid wastes from waste treatment;1;19 11 05*
+05;Health care and biological wastes;05.1;Infectious health care wastes;05.11;Human infectious health care wastes;1;18 01 03*
+05;Health care and biological wastes;05.1;Infectious health care wastes;05.12;Animal infectious health care wastes;1;18 02 02*
+05;Health care and biological wastes;05.2;Non-infectious health care wastes;05.21;Non-infectious human health care wastes;0;18 01 01
+05;Health care and biological wastes;05.2;Non-infectious health care wastes;05.21;Non-infectious human health care wastes;0;18 01 02
+05;Health care and biological wastes;05.2;Non-infectious health care wastes;05.21;Non-infectious human health care wastes;0;18 01 04
+05;Health care and biological wastes;05.2;Non-infectious health care wastes;05.22;Non-infectious animal health care wastes;0;18 02 01
+05;Health care and biological wastes;05.2;Non-infectious health care wastes;05.22;Non-infectious animal health care wastes;0;18 02 03
+06;Metallic wastes;06.1;Metal wastes ferrous;06.11;Ferrous metal waste and scrap;0;10 02 10
+06;Metallic wastes;06.1;Metal wastes ferrous;06.11;Ferrous metal waste and scrap;0;10 12 06
+06;Metallic wastes;06.1;Metal wastes ferrous;06.11;Ferrous metal waste and scrap;0;12 01 01
+06;Metallic wastes;06.1;Metal wastes ferrous;06.11;Ferrous metal waste and scrap;0;12 01 02
+06;Metallic wastes;06.1;Metal wastes ferrous;06.11;Ferrous metal waste and scrap;0;16 01 17
+06;Metallic wastes;06.1;Metal wastes ferrous;06.11;Ferrous metal waste and scrap;0;17 04 05
+06;Metallic wastes;06.1;Metal wastes ferrous;06.11;Ferrous metal waste and scrap;0;19 01 02
+06;Metallic wastes;06.1;Metal wastes ferrous;06.11;Ferrous metal waste and scrap;0;19 10 01
+06;Metallic wastes;06.1;Metal wastes ferrous;06.11;Ferrous metal waste and scrap;0;19 12 02
+06;Metallic wastes;06.2;Metal wastes non-ferrous;06.23;Other waste aluminium;0;17 04 02
+06;Metallic wastes;06.2;Metal wastes non-ferrous;06.24;Copper waste;0;17 04 01
+06;Metallic wastes;06.2;Metal wastes non-ferrous;06.25;Lead waste;0;17 04 03
+06;Metallic wastes;06.2;Metal wastes non-ferrous;06.26;Other metal wastes;0;11 05 01
+06;Metallic wastes;06.2;Metal wastes non-ferrous;06.26;Other metal wastes;0;12 01 03
+06;Metallic wastes;06.2;Metal wastes non-ferrous;06.26;Other metal wastes;0;12 01 04
+06;Metallic wastes;06.2;Metal wastes non-ferrous;06.26;Other metal wastes;0;16 01 18
+06;Metallic wastes;06.2;Metal wastes non-ferrous;06.26;Other metal wastes;0;17 04 04
+06;Metallic wastes;06.2;Metal wastes non-ferrous;06.26;Other metal wastes;0;17 04 06
+06;Metallic wastes;06.2;Metal wastes non-ferrous;06.26;Other metal wastes;0;17 04 11
+06;Metallic wastes;06.2;Metal wastes non-ferrous;06.26;Other metal wastes;0;19 10 02
+06;Metallic wastes;06.2;Metal wastes non-ferrous;06.26;Other metal wastes;0;19 12 03
+06;Metallic wastes;06.3;Metal wastes mixed ferrous and non-ferrous;06.31;Mixed metallic packaging;0;15 01 04
+06;Metallic wastes;06.3;Metal wastes mixed ferrous and non-ferrous;06.32;Other mixed metallic wastes;0;02 01 10
+06;Metallic wastes;06.3;Metal wastes mixed ferrous and non-ferrous;06.32;Other mixed metallic wastes;0;17 04 07
+06;Metallic wastes;06.3;Metal wastes mixed ferrous and non-ferrous;06.32;Other mixed metallic wastes;0;20 01 40
+07;Non-metallic wastes;07.1;Glass wastes;07.11;Glass packaging;0;15 01 07
+07;Non-metallic wastes;07.1;Glass wastes;07.12;Other glass wastes;0;10 11 12
+07;Non-metallic wastes;07.1;Glass wastes;07.12;Other glass wastes;0;16 01 20
+07;Non-metallic wastes;07.1;Glass wastes;07.12;Other glass wastes;0;17 02 02
+07;Non-metallic wastes;07.1;Glass wastes;07.12;Other glass wastes;0;19 12 05
+07;Non-metallic wastes;07.1;Glass wastes;07.12;Other glass wastes;0;20 01 02
+07;Non-metallic wastes;07.1;Glass wastes;07.12;Other glass wastes;1;10 11 11*
+07;Non-metallic wastes;07.2;Paper and cardboard wastes;07.21;Waste paper and cardboard packaging;0;15 01 01
+07;Non-metallic wastes;07.2;Paper and cardboard wastes;07.23;Other paper and cardboard wastes;0;19 12 01
+07;Non-metallic wastes;07.2;Paper and cardboard wastes;07.23;Other paper and cardboard wastes;0;20 01 01
+07;Non-metallic wastes;07.3;Rubber wastes;07.31;Used tyres;0;16 01 03
+07;Non-metallic wastes;07.4;Plastic wastes;07.41;Plastic packaging wastes;0;15 01 02
+07;Non-metallic wastes;07.4;Plastic wastes;07.42;Other plastic wastes;0;02 01 04
+07;Non-metallic wastes;07.4;Plastic wastes;07.42;Other plastic wastes;0;07 02 13
+07;Non-metallic wastes;07.4;Plastic wastes;07.42;Other plastic wastes;0;12 01 05
+07;Non-metallic wastes;07.4;Plastic wastes;07.42;Other plastic wastes;0;16 01 19
+07;Non-metallic wastes;07.4;Plastic wastes;07.42;Other plastic wastes;0;17 02 03
+07;Non-metallic wastes;07.4;Plastic wastes;07.42;Other plastic wastes;0;19 12 04
+07;Non-metallic wastes;07.4;Plastic wastes;07.42;Other plastic wastes;0;20 01 39
+07;Non-metallic wastes;07.5;Wood wastes;07.51;Wood packaging;0;15 01 03
+07;Non-metallic wastes;07.5;Wood wastes;07.52;Sawdust and shavings;0;03 01 05
+07;Non-metallic wastes;07.5;Wood wastes;07.52;Sawdust and shavings;1;03 01 04*
+07;Non-metallic wastes;07.5;Wood wastes;07.53;Other wood wastes;0;03 01 01
+07;Non-metallic wastes;07.5;Wood wastes;07.53;Other wood wastes;0;03 03 01
+07;Non-metallic wastes;07.5;Wood wastes;07.53;Other wood wastes;0;17 02 01
+07;Non-metallic wastes;07.5;Wood wastes;07.53;Other wood wastes;0;19 12 07
+07;Non-metallic wastes;07.5;Wood wastes;07.53;Other wood wastes;0;20 01 38
+07;Non-metallic wastes;07.5;Wood wastes;07.53;Other wood wastes;1;19 12 06*
+07;Non-metallic wastes;07.5;Wood wastes;07.53;Other wood wastes;1;20 01 37*
+07;Non-metallic wastes;07.6;Textile wastes;07.61;Worn clothing;0;20 01 10
+07;Non-metallic wastes;07.6;Textile wastes;07.62;Miscellaneous textiles wastes;0;04 02 09
+07;Non-metallic wastes;07.6;Textile wastes;07.62;Miscellaneous textiles wastes;0;04 02 10
+07;Non-metallic wastes;07.6;Textile wastes;07.62;Miscellaneous textiles wastes;0;04 02 21
+07;Non-metallic wastes;07.6;Textile wastes;07.62;Miscellaneous textiles wastes;0;04 02 22
+07;Non-metallic wastes;07.6;Textile wastes;07.62;Miscellaneous textiles wastes;0;15 01 09
+07;Non-metallic wastes;07.6;Textile wastes;07.62;Miscellaneous textiles wastes;0;19 12 08
+07;Non-metallic wastes;07.6;Textile wastes;07.62;Miscellaneous textiles wastes;0;20 01 11
+07;Non-metallic wastes;07.6;Textile wastes;07.63;Leather wastes;0;04 01 01
+07;Non-metallic wastes;07.6;Textile wastes;07.63;Leather wastes;0;04 01 02
+07;Non-metallic wastes;07.6;Textile wastes;07.63;Leather wastes;0;04 01 08
+07;Non-metallic wastes;07.7;Waste containing PCB;07.71;Oils containing PCBs;1;13 01 01*
+07;Non-metallic wastes;07.7;Waste containing PCB;07.71;Oils containing PCBs;1;13 03 01*
+07;Non-metallic wastes;07.7;Waste containing PCB;07.72;Equipment containing or contaminated by PCBs;1;16 01 09*
+07;Non-metallic wastes;07.7;Waste containing PCB;07.72;Equipment containing or contaminated by PCBs;1;16 02 09*
+07;Non-metallic wastes;07.7;Waste containing PCB;07.72;Equipment containing or contaminated by PCBs;1;16 02 10*
+07;Non-metallic wastes;07.7;Waste containing PCB;07.73;Construction and demolition waste containing PCBs;1;17 09 02*
+08;Discarded equipment;08.1;Discarded vehicles;08.12;Other discarded vehicles;0;16 01 06
+08;Discarded equipment;08.1;Discarded vehicles;08.12;Other discarded vehicles;1;16 01 04*
+08;Discarded equipment;08.2;Discarded electrical and electronic equipment;08.21;Discarded major household equipment;1;16 02 11*
+08;Discarded equipment;08.2;Discarded electrical and electronic equipment;08.21;Discarded major household equipment;1;20 01 23*
+08;Discarded equipment;08.2;Discarded electrical and electronic equipment;08.23;Other discarded electrical and electronic equipment;0;09 01 10
+08;Discarded equipment;08.2;Discarded electrical and electronic equipment;08.23;Other discarded electrical and electronic equipment;0;09 01 12
+08;Discarded equipment;08.2;Discarded electrical and electronic equipment;08.23;Other discarded electrical and electronic equipment;0;16 02 14
+08;Discarded equipment;08.2;Discarded electrical and electronic equipment;08.23;Other discarded electrical and electronic equipment;0;20 01 36
+08;Discarded equipment;08.2;Discarded electrical and electronic equipment;08.23;Other discarded electrical and electronic equipment;1;09 01 11*
+08;Discarded equipment;08.2;Discarded electrical and electronic equipment;08.23;Other discarded electrical and electronic equipment;1;16 02 13*
+08;Discarded equipment;08.2;Discarded electrical and electronic equipment;08.23;Other discarded electrical and electronic equipment;1;20 01 35*
+08;Discarded equipment;08.4;Discarded machines and equipment components;08.41;Batteries and accumulators wastes;0;16 06 04
+08;Discarded equipment;08.4;Discarded machines and equipment components;08.41;Batteries and accumulators wastes;0;16 06 05
+08;Discarded equipment;08.4;Discarded machines and equipment components;08.41;Batteries and accumulators wastes;0;20 01 34
+08;Discarded equipment;08.4;Discarded machines and equipment components;08.41;Batteries and accumulators wastes;1;16 06 01*
+08;Discarded equipment;08.4;Discarded machines and equipment components;08.41;Batteries and accumulators wastes;1;16 06 02*
+08;Discarded equipment;08.4;Discarded machines and equipment components;08.41;Batteries and accumulators wastes;1;16 06 03*
+08;Discarded equipment;08.4;Discarded machines and equipment components;08.41;Batteries and accumulators wastes;1;20 01 33*
+08;Discarded equipment;08.4;Discarded machines and equipment components;08.43;Other discarded machines and equipment components;0;16 01 12
+08;Discarded equipment;08.4;Discarded machines and equipment components;08.43;Other discarded machines and equipment components;0;16 01 16
+08;Discarded equipment;08.4;Discarded machines and equipment components;08.43;Other discarded machines and equipment components;0;16 01 22
+08;Discarded equipment;08.4;Discarded machines and equipment components;08.43;Other discarded machines and equipment components;0;16 02 16
+08;Discarded equipment;08.4;Discarded machines and equipment components;08.43;Other discarded machines and equipment components;1;16 01 07*
+08;Discarded equipment;08.4;Discarded machines and equipment components;08.43;Other discarded machines and equipment components;1;16 01 08*
+08;Discarded equipment;08.4;Discarded machines and equipment components;08.43;Other discarded machines and equipment components;1;16 01 10*
+08;Discarded equipment;08.4;Discarded machines and equipment components;08.43;Other discarded machines and equipment components;1;16 01 21*
+08;Discarded equipment;08.4;Discarded machines and equipment components;08.43;Other discarded machines and equipment components;1;16 02 15*
+08;Discarded equipment;08.4;Discarded machines and equipment components;08.43;Other discarded machines and equipment components;1;20 01 21*
+09;Animal and vegetal wastes;09.1;Animal and mixed food waste;09.11;Animal waste of food preparation and products;0;02 01 02
+09;Animal and vegetal wastes;09.1;Animal and mixed food waste;09.11;Animal waste of food preparation and products;0;02 02 01
+09;Animal and vegetal wastes;09.1;Animal and mixed food waste;09.11;Animal waste of food preparation and products;0;02 02 02
+09;Animal and vegetal wastes;09.1;Animal and mixed food waste;09.11;Animal waste of food preparation and products;0;02 02 03
+09;Animal and vegetal wastes;09.1;Animal and mixed food waste;09.11;Animal waste of food preparation and products;0;02 05 01
+09;Animal and vegetal wastes;09.1;Animal and mixed food waste;09.12;Mixed waste of food preparation and products;0;02 03 02
+09;Animal and vegetal wastes;09.1;Animal and mixed food waste;09.12;Mixed waste of food preparation and products;0;02 06 02
+09;Animal and vegetal wastes;09.1;Animal and mixed food waste;09.12;Mixed waste of food preparation and products;0;19 08 09
+09;Animal and vegetal wastes;09.1;Animal and mixed food waste;09.12;Mixed waste of food preparation and products;0;20 01 08
+09;Animal and vegetal wastes;09.1;Animal and mixed food waste;09.12;Mixed waste of food preparation and products;0;20 01 25
+09;Animal and vegetal wastes;09.2;Vegetal wastes;09.21;Green wastes;0;02 01 07
+09;Animal and vegetal wastes;09.2;Vegetal wastes;09.21;Green wastes;0;20 02 01
+09;Animal and vegetal wastes;09.2;Vegetal wastes;09.22;Vegetal waste of food preparation and products;0;02 01 01
+09;Animal and vegetal wastes;09.2;Vegetal wastes;09.22;Vegetal waste of food preparation and products;0;02 01 03
+09;Animal and vegetal wastes;09.2;Vegetal wastes;09.22;Vegetal waste of food preparation and products;0;02 03 01
+09;Animal and vegetal wastes;09.2;Vegetal wastes;09.22;Vegetal waste of food preparation and products;0;02 03 03
+09;Animal and vegetal wastes;09.2;Vegetal wastes;09.22;Vegetal waste of food preparation and products;0;02 03 04
+09;Animal and vegetal wastes;09.2;Vegetal wastes;09.22;Vegetal waste of food preparation and products;0;02 06 01
+09;Animal and vegetal wastes;09.2;Vegetal wastes;09.22;Vegetal waste of food preparation and products;0;02 07 01
+09;Animal and vegetal wastes;09.2;Vegetal wastes;09.22;Vegetal waste of food preparation and products;0;02 07 02
+09;Animal and vegetal wastes;09.2;Vegetal wastes;09.22;Vegetal waste of food preparation and products;0;02 07 04
+09;Animal and vegetal wastes;09.3;Slurry and manure;09.31;Slurry and manure;0;02 01 06
+10;Mixed wastes;10.1;Household and similar wastes;10.11;Household wastes;0;20 03 01
+10;Mixed wastes;10.1;Household and similar wastes;10.11;Household wastes;0;20 03 02
+10;Mixed wastes;10.1;Household and similar wastes;10.11;Household wastes;0;20 03 07
+10;Mixed wastes;10.1;Household and similar wastes;10.11;Household wastes;0;20 03 99
+10;Mixed wastes;10.1;Household and similar wastes;10.12;Street cleaning wastes;0;20 03 03
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.21;Mixed packaging;0;15 01 05
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.21;Mixed packaging;0;15 01 06
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;01 03 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;01 04 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;01 05 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;02 01 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;02 02 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;02 03 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;02 04 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;02 05 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;02 06 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;02 07 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;03 01 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;03 03 07
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;03 03 08
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;03 03 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;04 01 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;04 02 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;05 01 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;05 06 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;05 07 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;06 01 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;06 02 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;06 03 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;06 04 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;06 06 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;06 07 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;06 08 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;06 09 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;06 10 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;06 11 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;06 13 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;07 01 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;07 02 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;07 03 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;07 04 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;07 05 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;07 06 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;07 07 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;08 01 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;08 02 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;08 03 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;08 04 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;09 01 07
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;09 01 08
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;09 01 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;10 01 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;10 02 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;10 03 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;10 04 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;10 05 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;10 06 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;10 07 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;10 08 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;10 09 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;10 10 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;10 11 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;10 12 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;10 13 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;11 01 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;11 02 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;11 05 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;12 01 13
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;12 01 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;16 01 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;16 03 04
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;16 03 06
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;16 07 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;19 01 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;19 02 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;19 05 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;19 06 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;19 08 01
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;19 08 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;19 09 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;19 11 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;0;20 01 99
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;1;09 01 06*
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;1;16 03 03*
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;1;16 03 05*
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;1;17 04 09*
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;1;17 04 10*
+10;Mixed wastes;10.2;Mixed and undifferentiated materials;10.22;Other mixed and undifferentiated materials;1;18 01 10*
+10;Mixed wastes;10.3;Sorting residues;10.32;Other sorting residues;0;19 02 03
+10;Mixed wastes;10.3;Sorting residues;10.32;Other sorting residues;0;19 02 10
+10;Mixed wastes;10.3;Sorting residues;10.32;Other sorting residues;0;19 05 01
+10;Mixed wastes;10.3;Sorting residues;10.32;Other sorting residues;0;19 05 02
+10;Mixed wastes;10.3;Sorting residues;10.32;Other sorting residues;0;19 05 03
+10;Mixed wastes;10.3;Sorting residues;10.32;Other sorting residues;0;19 10 04
+10;Mixed wastes;10.3;Sorting residues;10.32;Other sorting residues;0;19 10 06
+10;Mixed wastes;10.3;Sorting residues;10.32;Other sorting residues;0;19 12 10
+10;Mixed wastes;10.3;Sorting residues;10.32;Other sorting residues;0;19 12 12
+10;Mixed wastes;10.3;Sorting residues;10.32;Other sorting residues;1;19 02 04*
+10;Mixed wastes;10.3;Sorting residues;10.32;Other sorting residues;1;19 02 09*
+10;Mixed wastes;10.3;Sorting residues;10.32;Other sorting residues;1;19 04 03*
+10;Mixed wastes;10.3;Sorting residues;10.32;Other sorting residues;1;19 10 03*
+10;Mixed wastes;10.3;Sorting residues;10.32;Other sorting residues;1;19 10 05*
+10;Mixed wastes;10.3;Sorting residues;10.32;Other sorting residues;1;19 12 11*
+11;Common sludges;11.1;Waste water treatment sludges;11.11;Sludges from treatment of public sewerage water;0;19 08 05
+11;Common sludges;11.1;Waste water treatment sludges;11.12;Biodegradable sludges from treatment of other waste water;0;02 02 04
+11;Common sludges;11.1;Waste water treatment sludges;11.12;Biodegradable sludges from treatment of other waste water;0;02 03 05
+11;Common sludges;11.1;Waste water treatment sludges;11.12;Biodegradable sludges from treatment of other waste water;0;02 04 03
+11;Common sludges;11.1;Waste water treatment sludges;11.12;Biodegradable sludges from treatment of other waste water;0;02 05 02
+11;Common sludges;11.1;Waste water treatment sludges;11.12;Biodegradable sludges from treatment of other waste water;0;02 06 03
+11;Common sludges;11.1;Waste water treatment sludges;11.12;Biodegradable sludges from treatment of other waste water;0;02 07 05
+11;Common sludges;11.1;Waste water treatment sludges;11.12;Biodegradable sludges from treatment of other waste water;0;03 03 11
+11;Common sludges;11.2;Sludges from purification of drinking and process water;11.21;Sludges from purification of drinking and process water;0;05 01 13
+11;Common sludges;11.2;Sludges from purification of drinking and process water;11.21;Sludges from purification of drinking and process water;0;19 09 02
+11;Common sludges;11.4;Cesspit contents;11.41;Cesspit contents;0;20 03 04
+11;Common sludges;11.4;Cesspit contents;11.41;Cesspit contents;0;20 03 06
+12;Mineral wastes;12.1;Construction and demolition wastes;12.11;Concrete bricks and gypsum waste;0;17 01 01
+12;Mineral wastes;12.1;Construction and demolition wastes;12.11;Concrete bricks and gypsum waste;0;17 01 02
+12;Mineral wastes;12.1;Construction and demolition wastes;12.11;Concrete bricks and gypsum waste;0;17 01 03
+12;Mineral wastes;12.1;Construction and demolition wastes;12.11;Concrete bricks and gypsum waste;0;17 01 07
+12;Mineral wastes;12.1;Construction and demolition wastes;12.11;Concrete bricks and gypsum waste;0;17 05 08
+12;Mineral wastes;12.1;Construction and demolition wastes;12.11;Concrete bricks and gypsum waste;0;17 08 02
+12;Mineral wastes;12.1;Construction and demolition wastes;12.11;Concrete bricks and gypsum waste;1;17 01 06*
+12;Mineral wastes;12.1;Construction and demolition wastes;12.11;Concrete bricks and gypsum waste;1;17 05 07*
+12;Mineral wastes;12.1;Construction and demolition wastes;12.11;Concrete bricks and gypsum waste;1;17 08 01*
+12;Mineral wastes;12.1;Construction and demolition wastes;12.12;Waste hydrocarbonised road-surfacing material;0;17 03 02
+12;Mineral wastes;12.1;Construction and demolition wastes;12.12;Waste hydrocarbonised road-surfacing material;1;17 03 01*
+12;Mineral wastes;12.1;Construction and demolition wastes;12.12;Waste hydrocarbonised road-surfacing material;1;17 03 03*
+12;Mineral wastes;12.1;Construction and demolition wastes;12.13;Mixed construction wastes;0;17 06 04
+12;Mineral wastes;12.1;Construction and demolition wastes;12.13;Mixed construction wastes;0;17 09 04
+12;Mineral wastes;12.1;Construction and demolition wastes;12.13;Mixed construction wastes;1;17 02 04*
+12;Mineral wastes;12.1;Construction and demolition wastes;12.13;Mixed construction wastes;1;17 06 03*
+12;Mineral wastes;12.1;Construction and demolition wastes;12.13;Mixed construction wastes;1;17 09 01*
+12;Mineral wastes;12.1;Construction and demolition wastes;12.13;Mixed construction wastes;1;17 09 03*
+12;Mineral wastes;12.2;Asbestos wastes;12.21;Asbestos wastes;1;06 07 01*
+12;Mineral wastes;12.2;Asbestos wastes;12.21;Asbestos wastes;1;06 13 04*
+12;Mineral wastes;12.2;Asbestos wastes;12.21;Asbestos wastes;1;10 13 09*
+12;Mineral wastes;12.2;Asbestos wastes;12.21;Asbestos wastes;1;15 01 11*
+12;Mineral wastes;12.2;Asbestos wastes;12.21;Asbestos wastes;1;16 01 11*
+12;Mineral wastes;12.2;Asbestos wastes;12.21;Asbestos wastes;1;16 02 12*
+12;Mineral wastes;12.2;Asbestos wastes;12.21;Asbestos wastes;1;17 06 01*
+12;Mineral wastes;12.2;Asbestos wastes;12.21;Asbestos wastes;1;17 06 05*
+12;Mineral wastes;12.3;Waste of naturally occurring minerals;12.31;Waste of naturally occurring minerals;0;01 01 01
+12;Mineral wastes;12.3;Waste of naturally occurring minerals;12.31;Waste of naturally occurring minerals;0;01 01 02
+12;Mineral wastes;12.3;Waste of naturally occurring minerals;12.31;Waste of naturally occurring minerals;0;01 03 06
+12;Mineral wastes;12.3;Waste of naturally occurring minerals;12.31;Waste of naturally occurring minerals;0;01 03 08
+12;Mineral wastes;12.3;Waste of naturally occurring minerals;12.31;Waste of naturally occurring minerals;0;01 03 09
+12;Mineral wastes;12.3;Waste of naturally occurring minerals;12.31;Waste of naturally occurring minerals;0;01 04 08
+12;Mineral wastes;12.3;Waste of naturally occurring minerals;12.31;Waste of naturally occurring minerals;0;01 04 09
+12;Mineral wastes;12.3;Waste of naturally occurring minerals;12.31;Waste of naturally occurring minerals;0;01 04 10
+12;Mineral wastes;12.3;Waste of naturally occurring minerals;12.31;Waste of naturally occurring minerals;0;01 04 11
+12;Mineral wastes;12.3;Waste of naturally occurring minerals;12.31;Waste of naturally occurring minerals;0;01 04 12
+12;Mineral wastes;12.3;Waste of naturally occurring minerals;12.31;Waste of naturally occurring minerals;0;01 04 13
+12;Mineral wastes;12.3;Waste of naturally occurring minerals;12.31;Waste of naturally occurring minerals;0;01 05 04
+12;Mineral wastes;12.3;Waste of naturally occurring minerals;12.31;Waste of naturally occurring minerals;0;01 05 07
+12;Mineral wastes;12.3;Waste of naturally occurring minerals;12.31;Waste of naturally occurring minerals;0;01 05 08
+12;Mineral wastes;12.3;Waste of naturally occurring minerals;12.31;Waste of naturally occurring minerals;0;02 04 01
+12;Mineral wastes;12.3;Waste of naturally occurring minerals;12.31;Waste of naturally occurring minerals;0;08 02 02
+12;Mineral wastes;12.3;Waste of naturally occurring minerals;12.31;Waste of naturally occurring minerals;0;10 11 10
+12;Mineral wastes;12.3;Waste of naturally occurring minerals;12.31;Waste of naturally occurring minerals;0;10 12 01
+12;Mineral wastes;12.3;Waste of naturally occurring minerals;12.31;Waste of naturally occurring minerals;0;10 13 01
+12;Mineral wastes;12.3;Waste of naturally occurring minerals;12.31;Waste of naturally occurring minerals;0;19 08 02
+12;Mineral wastes;12.3;Waste of naturally occurring minerals;12.31;Waste of naturally occurring minerals;0;19 09 01
+12;Mineral wastes;12.3;Waste of naturally occurring minerals;12.31;Waste of naturally occurring minerals;0;19 13 02
+12;Mineral wastes;12.3;Waste of naturally occurring minerals;12.31;Waste of naturally occurring minerals;0;20 02 03
+12;Mineral wastes;12.3;Waste of naturally occurring minerals;12.31;Waste of naturally occurring minerals;1;01 03 04*
+12;Mineral wastes;12.3;Waste of naturally occurring minerals;12.31;Waste of naturally occurring minerals;1;01 03 05*
+12;Mineral wastes;12.3;Waste of naturally occurring minerals;12.31;Waste of naturally occurring minerals;1;01 03 07*
+12;Mineral wastes;12.3;Waste of naturally occurring minerals;12.31;Waste of naturally occurring minerals;1;01 04 07*
+12;Mineral wastes;12.3;Waste of naturally occurring minerals;12.31;Waste of naturally occurring minerals;1;01 05 06*
+12;Mineral wastes;12.3;Waste of naturally occurring minerals;12.31;Waste of naturally occurring minerals;1;10 11 09*
+12;Mineral wastes;12.3;Waste of naturally occurring minerals;12.31;Waste of naturally occurring minerals;1;19 13 01*
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;0;10 01 05
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;0;10 01 07
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;0;10 01 19
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;0;10 02 08
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;0;10 02 14
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;0;10 03 20
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;0;10 03 24
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;0;10 03 26
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;0;10 07 03
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;0;10 07 05
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;0;10 08 16
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;0;10 08 18
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;0;10 09 10
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;0;10 10 10
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;0;10 11 16
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;0;10 11 18
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;0;10 12 05
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;0;10 12 10
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;0;10 13 07
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;0;10 13 13
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;1;10 01 18*
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;1;10 02 07*
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;1;10 02 13*
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;1;10 03 19*
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;1;10 03 23*
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;1;10 03 25*
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;1;10 04 04*
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;1;10 04 06*
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;1;10 04 07*
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;1;10 05 03*
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;1;10 05 05*
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;1;10 05 06*
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;1;10 06 03*
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;1;10 06 06*
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;1;10 06 07*
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;1;10 08 15*
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;1;10 08 17*
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;1;10 09 09*
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;1;10 10 09*
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;1;10 11 15*
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;1;10 11 17*
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;1;10 12 09*
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;1;10 13 12*
+12;Mineral wastes;12.4;Combustion wastes;12.41;Waste from flue gas purification;1;11 05 03*
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;0;06 09 02
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;0;10 01 01
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;0;10 01 02
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;0;10 01 03
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;0;10 01 15
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;0;10 01 17
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;0;10 01 24
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;0;10 02 01
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;0;10 02 02
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;0;10 03 16
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;0;10 03 22
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;0;10 03 30
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;0;10 05 01
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;0;10 05 04
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;0;10 05 11
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;0;10 06 01
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;0;10 06 02
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;0;10 06 04
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;0;10 07 01
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;0;10 07 02
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;0;10 07 04
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;0;10 08 04
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;0;10 08 09
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;0;10 08 11
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;0;10 09 03
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;0;10 09 12
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;0;10 10 03
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;0;10 10 12
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;0;11 05 02
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;1;10 01 04*
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;1;10 01 13*
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;1;10 01 14*
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;1;10 01 16*
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;1;10 03 04*
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;1;10 03 09*
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;1;10 03 15*
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;1;10 03 21*
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;1;10 03 29*
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;1;10 04 01*
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;1;10 04 02*
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;1;10 04 05*
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;1;10 05 10*
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;1;10 08 08*
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;1;10 08 10*
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;1;10 09 11*
+12;Mineral wastes;12.4;Combustion wastes;12.42;Slags and ashes from thermal treatment and combustion;1;10 10 11*
+12;Mineral wastes;12.5;Various mineral wastes;12.51;Artificial mineral wastes;0;02 04 02
+12;Mineral wastes;12.5;Various mineral wastes;12.51;Artificial mineral wastes;0;06 09 04
+12;Mineral wastes;12.5;Various mineral wastes;12.51;Artificial mineral wastes;0;06 11 01
+12;Mineral wastes;12.5;Various mineral wastes;12.51;Artificial mineral wastes;0;08 02 03
+12;Mineral wastes;12.5;Various mineral wastes;12.51;Artificial mineral wastes;0;10 03 05
+12;Mineral wastes;12.5;Various mineral wastes;12.51;Artificial mineral wastes;0;10 09 14
+12;Mineral wastes;12.5;Various mineral wastes;12.51;Artificial mineral wastes;0;10 11 03
+12;Mineral wastes;12.5;Various mineral wastes;12.51;Artificial mineral wastes;0;10 11 05
+12;Mineral wastes;12.5;Various mineral wastes;12.51;Artificial mineral wastes;0;10 11 14
+12;Mineral wastes;12.5;Various mineral wastes;12.51;Artificial mineral wastes;0;10 12 08
+12;Mineral wastes;12.5;Various mineral wastes;12.51;Artificial mineral wastes;0;10 12 12
+12;Mineral wastes;12.5;Various mineral wastes;12.51;Artificial mineral wastes;0;10 13 04
+12;Mineral wastes;12.5;Various mineral wastes;12.51;Artificial mineral wastes;0;10 13 06
+12;Mineral wastes;12.5;Various mineral wastes;12.51;Artificial mineral wastes;0;10 13 10
+12;Mineral wastes;12.5;Various mineral wastes;12.51;Artificial mineral wastes;0;10 13 11
+12;Mineral wastes;12.5;Various mineral wastes;12.51;Artificial mineral wastes;0;10 13 14
+12;Mineral wastes;12.5;Various mineral wastes;12.51;Artificial mineral wastes;0;12 01 17
+12;Mineral wastes;12.5;Various mineral wastes;12.51;Artificial mineral wastes;0;12 01 21
+12;Mineral wastes;12.5;Various mineral wastes;12.51;Artificial mineral wastes;1;06 09 03*
+12;Mineral wastes;12.5;Various mineral wastes;12.51;Artificial mineral wastes;1;10 11 13*
+12;Mineral wastes;12.5;Various mineral wastes;12.51;Artificial mineral wastes;1;10 12 11*
+12;Mineral wastes;12.5;Various mineral wastes;12.51;Artificial mineral wastes;1;11 02 02*
+12;Mineral wastes;12.5;Various mineral wastes;12.51;Artificial mineral wastes;1;12 01 16*
+12;Mineral wastes;12.5;Various mineral wastes;12.51;Artificial mineral wastes;1;12 01 20*
+12;Mineral wastes;12.5;Various mineral wastes;12.52;Waste refractory materials;0;10 09 06
+12;Mineral wastes;12.5;Various mineral wastes;12.52;Waste refractory materials;0;10 09 08
+12;Mineral wastes;12.5;Various mineral wastes;12.52;Waste refractory materials;0;10 10 06
+12;Mineral wastes;12.5;Various mineral wastes;12.52;Waste refractory materials;0;10 10 08
+12;Mineral wastes;12.5;Various mineral wastes;12.52;Waste refractory materials;0;16 11 02
+12;Mineral wastes;12.5;Various mineral wastes;12.52;Waste refractory materials;0;16 11 04
+12;Mineral wastes;12.5;Various mineral wastes;12.52;Waste refractory materials;0;16 11 06
+12;Mineral wastes;12.5;Various mineral wastes;12.52;Waste refractory materials;1;10 09 05*
+12;Mineral wastes;12.5;Various mineral wastes;12.52;Waste refractory materials;1;10 09 07*
+12;Mineral wastes;12.5;Various mineral wastes;12.52;Waste refractory materials;1;10 10 05*
+12;Mineral wastes;12.5;Various mineral wastes;12.52;Waste refractory materials;1;10 10 07*
+12;Mineral wastes;12.5;Various mineral wastes;12.52;Waste refractory materials;1;16 11 01*
+12;Mineral wastes;12.5;Various mineral wastes;12.52;Waste refractory materials;1;16 11 03*
+12;Mineral wastes;12.5;Various mineral wastes;12.52;Waste refractory materials;1;16 11 05*
+12;Mineral wastes;12.6;Soils;12.61;Soils;0;17 05 04
+12;Mineral wastes;12.6;Soils;12.61;Soils;0;20 02 02
+12;Mineral wastes;12.6;Soils;12.61;Soils;1;05 01 05*
+12;Mineral wastes;12.6;Soils;12.61;Soils;1;17 05 03*
+12;Mineral wastes;12.7;Dredging spoil;12.71;Dredging spoil;0;17 05 06
+12;Mineral wastes;12.7;Dredging spoil;12.71;Dredging spoil;1;17 05 05*
+12;Mineral wastes;12.8;Waste from waste treatment;12.81;Waste from waste treatment;0;19 01 12
+12;Mineral wastes;12.8;Waste from waste treatment;12.81;Waste from waste treatment;0;19 01 14
+12;Mineral wastes;12.8;Waste from waste treatment;12.81;Waste from waste treatment;0;19 01 16
+12;Mineral wastes;12.8;Waste from waste treatment;12.81;Waste from waste treatment;0;19 01 18
+12;Mineral wastes;12.8;Waste from waste treatment;12.81;Waste from waste treatment;0;19 01 19
+12;Mineral wastes;12.8;Waste from waste treatment;12.81;Waste from waste treatment;0;19 12 09
+12;Mineral wastes;12.8;Waste from waste treatment;12.81;Waste from waste treatment;1;19 01 05*
+12;Mineral wastes;12.8;Waste from waste treatment;12.81;Waste from waste treatment;1;19 01 06*
+12;Mineral wastes;12.8;Waste from waste treatment;12.81;Waste from waste treatment;1;19 01 07*
+12;Mineral wastes;12.8;Waste from waste treatment;12.81;Waste from waste treatment;1;19 01 11*
+12;Mineral wastes;12.8;Waste from waste treatment;12.81;Waste from waste treatment;1;19 01 13*
+12;Mineral wastes;12.8;Waste from waste treatment;12.81;Waste from waste treatment;1;19 01 15*
+12;Mineral wastes;12.8;Waste from waste treatment;12.81;Waste from waste treatment;1;19 01 17*
+12;Mineral wastes;12.8;Waste from waste treatment;12.81;Waste from waste treatment;1;19 04 02*
+12;Mineral wastes;12.8;Waste from waste treatment;12.81;Waste from waste treatment;1;19 11 07*
+13;Solidified stabilised or vitrified waste;13.1;Solidified or stabilised waste;13.11;Solidified or stabilised waste;0;19 03 05
+13;Solidified stabilised or vitrified waste;13.1;Solidified or stabilised waste;13.11;Solidified or stabilised waste;0;19 03 07
+13;Solidified stabilised or vitrified waste;13.1;Solidified or stabilised waste;13.11;Solidified or stabilised waste;1;19 03 04*
+13;Solidified stabilised or vitrified waste;13.1;Solidified or stabilised waste;13.11;Solidified or stabilised waste;1;19 03 06*
+13;Solidified stabilised or vitrified waste;13.2;Vitrified wastes;13.21;Vitrified wastes;0;19 04 01
