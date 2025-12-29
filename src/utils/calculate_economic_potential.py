@@ -1,28 +1,31 @@
 import pandas as pd
 
 
-def find_economic_potential_from_shipment(shipment_df, save_filename: str):
+def calculate_economic_potential_from_shipment(shipment_df, save_filename: str):
+    # Read recycling potential data
     recycling_potential_df = pd.read_csv(
         "../data/raw/EWC-recycling potential.csv", sep=";"
     )
     recycling_potential_df.rename(
         columns={"Category_Code": "Middle_Level_Code"}, inplace=True
     )
+
+    # Merge recycling potential with shipment data
     economic_potential_shipment = pd.merge(
         shipment_df,
         recycling_potential_df[["Middle_Level_Code", "Recycling_Potential_Index"]],
         how="inner",
         on="Middle_Level_Code",
     )
+    economic_potential_shipment["Uncertainty factor"] = 0.33
 
+    # Calculate economic potential
     economic_potential_shipment["Economic_potential"] = (
         economic_potential_shipment["mean_ship"]
         * economic_potential_shipment["Recycling_Potential_Index"]
-    )
-    economic_potential_shipment["Economic_potential"] = economic_potential_shipment[
-        "Economic_potential"
-    ].round(-3)
-    economic_potential_shipment["Uncertainty factor"] = 0.33
+    ).round(-3)
+
+    # Min range
     economic_potential_shipment["Min_economic_potential"] = (
         (
             economic_potential_shipment["mean_ship"]
@@ -31,13 +34,15 @@ def find_economic_potential_from_shipment(shipment_df, save_filename: str):
         * economic_potential_shipment["Recycling_Potential_Index"]
         * (1 - economic_potential_shipment["Uncertainty factor"])
     ).round(-3)
+
+    # Max range
     economic_potential_shipment["Max_economic_potential"] = (
         (
             economic_potential_shipment["mean_ship"]
             + economic_potential_shipment["std_ship"]
         )
         * economic_potential_shipment["Recycling_Potential_Index"]
-        * (1 - economic_potential_shipment["Uncertainty factor"])
+        * (1 + economic_potential_shipment["Uncertainty factor"])
     ).round(-3)
 
     economic_potential_shipment[

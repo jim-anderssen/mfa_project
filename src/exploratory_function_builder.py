@@ -1,151 +1,65 @@
 import pandas as pd
 import numpy as np
-from utils import load_dataset
-from utils.find_economic_potential import find_economic_potential_from_shipment
+from utils.load_dataset import load_dataset
+from utils.load_dataset import load_shipment_data_with_EWC_codes
+from utils.calculate_economic_potential import calculate_economic_potential_from_shipment
+from utils.queries import examine_potential_of_middle_level_shipment_data
+from utils.queries import find_exported_waste_for_disposal
+
+%load_ext autoreload
+%autoreload 2
 
 pd.options.display.max_columns = 999
+pd.options.display.max_rows = 25
+
 
 wasgen = load_dataset("env_wasgen")
 wastrt = load_dataset("env_wastrt")
 
+def smart_format(x):
+    if pd.isna(x):
+        return ""
+    if abs(x) >= 1_000_000:
+        return f"{x/1_000_000:,.2f}M"   # millions
+    elif abs(x) >= 1_000:
+        return f"{x:,.0f}"             # thousands
+    elif abs(x) >= 1:
+        return f"{x:,.2f}"             # normal numbers
+    else:
+        return f"{x:.2f}"              # small numbers like 0.33
 
+pd.options.display.float_format = smart_format
+
+    
 wasship = pd.read_excel(
     "../data/raw/Waste_shipment_data_imports_exports_20250927.xlsx", header=8
 )
 
+wasship.dtypes
+
 low_to_ewc = pd.read_csv("../data/raw/LoW_to_EWC.csv", sep=";")
+low_codes = pd.read_csv("../data/raw/LoW_codes.csv",sep=';')
 
-wasship.head()
-wasship.rename(columns={"European List of Waste code": "LoW_Code"}, inplace=True)
-
-low_to_ewc.head()
-low_to_ewc["LoW_Code"] = low_to_ewc["LoW_Code"].str.replace(" ", "")
-
-wasship_ewc = pd.merge(
-    wasship,
-    low_to_ewc[["LoW_Code", "Bottom_Level_Code", "Bottom_Level_Description"]],
-    how="inner",
-    on="LoW_Code",
-)
-
-wasship_ewc = pd.merge(wasship, low_to_ewc, how="inner", on="LoW_Code")
+merged_low_ewc = pd.merge(low_to_ewc,
+                          low_codes,
+                          how='outer',
+                          on='LoW_Code'
+                          )
+merged_low_ewc.to_csv("../data/interim/EWC_LoW_codes.csv",sep=';',index=False)
 
 
-num_cols = wasship_ewc.select_dtypes(include=[np.number]).columns
-wasship_ewc[num_cols] = wasship_ewc[num_cols].astype(float)
-wasship_ewc = wasship_ewc.apply(pd.to_numeric, errors="coerce")
-wasship_ewc["Quantity in kg per capita"] = pd.to_numeric(
-    wasship_ewc["Quantity in kg per capita"], errors="coerce"
-)
-wasship_ewc.head().dtypes
-export = wasship_ewc[wasship_ewc["Import/export"] == "Export"]
-export_disposal = wasship_ewc[
-    (wasship_ewc["Import/export"] == "Export")
-    & (wasship_ewc["Disposal and recovery code"].str.startswith("D"))
-]
 
+ewc_low = pd.read_csv("../data/interim/EWC_LoW_codes.csv",sep=';',dtype=str)
+ewc_low.dtypes
 
-export_disposal.groupby(
-    ["Bottom_Level_Description", "Country reporting", "To or from country", "Notes"]
-)["Quantity in tonnes"].mean().sort_values(ascending=False).reset_index().head(50)
-export.groupby(["Bottom_Level_Description", "Country reporting", "To or from country"])[
-    "Quantity in kg per capita"
-].sum().sort_values(ascending=False).reset_index().head(50)
+wasship_ewc = load_shipment_data_with_EWC_codes()
 
-wasship_ewc["Middle_Level_Description"].unique()
-metal_wastes = wasship_ewc[
-    wasship_ewc["Middle_Level_Description"] == "Metal wastes non-ferrous"
-]
-metal_wastes.groupby(
-    ["Middle_Level_Description", "Country reporting", "To or from country"]
-)["Quantity in tonnes"].sum().sort_values(ascending=False).reset_index().head(50)
-
-fin_swe_metal_waste = wasship_ewc[
-    (wasship_ewc["Middle_Level_Description"] == "Metal wastes non-ferrous")
-    & (
-        (wasship_ewc["Country reporting"] == "Sweden")
-        | (wasship_ewc["Country reporting"] == "Finland")
-    )
-    & (
-        (wasship_ewc["To or from country"] == "Sweden")
-        | (wasship_ewc["To or from country"] == "Finland")
-    )
-]
-
-fin_swe_metal_waste.groupby(
-    [
-        "Bottom_Level_Description",
-        "Country reporting",
-        "To or from country",
-        "Disposal and recovery code",
-    ]
-)["Quantity in tonnes"].mean().sort_values(ascending=False).reset_index().head(50)
-fin_swe_metal_waste["Notes"].value_counts()
-
-wasgen[0]
-
-
-# Data transformations
+# Possible Data transformations
 
 # Generation = Treatment + Export - Import + delta Stock change (=residual)
 # Residual = G - (T+E-I)
 # Large positive residual - > Under reported treatment
 # Large negative residual -> Double counting or misclassification
-
-wasgen[0].head()
-wasgen[2]["waste"]
-
-# Example metal wastes ferrous
-gen_nonfer = wasgen[0][wasgen[0]["waste"] == "W062"]
-trt_nonfer = wastrt[0][wastrt[0]["waste"] == "W062"]
-
-wasship_ewc.head()
-wasship_ewc["Middle_Level_Description"].unique()
-ship_fer = wasship_ewc[
-    wasship_ewc["Middle_Level_Description"] == "Metal wastes ferrous"
-]
-ship_nonfer = wasship_ewc[
-    wasship_ewc["Middle_Level_Description"] == "Metal wastes non-ferrous"
-]
-
-imp_nonfer = ship_nonfer[ship_nonfer["Import/export"] == "Import"]
-exp_nonfer = ship_nonfer[ship_nonfer["Import/export"] == "Export"]
-
-imp_fer = ship_fer[ship_fer["Import/export"] == "Import"]
-exp_fer = ship_fer[ship_fer["Import/export"] == "Export"]
-
-
-nonfer = ship_nonfer.pivot_table(
-    index=[
-        "Country reporting",
-        "Import/export",
-        "To or from country",
-        "Disposal and recovery code",
-    ],
-    columns="Year",
-    values="Quantity in tonnes",
-    aggfunc="sum",
-).reset_index()
-
-fer = ship_fer.pivot_table(
-    index=[
-        "Country reporting",
-        "Import/export",
-        "To or from country",
-        "Disposal and recovery code",
-    ],
-    columns="Year",
-    values="Quantity in tonnes",
-    aggfunc="sum",
-).reset_index()
-
-fer["mean_ship"] = fer.select_dtypes(include="number").mean(axis=1)
-fer.sort_values(by="mean_ship", ascending=False).reset_index().head(20)
-
-nonfer["mean_ship"] = nonfer.select_dtypes(include="number").mean(axis=1)
-nonfer.sort_values(by="mean_ship", ascending=False).reset_index().head(20)
-
-nonfer["Disposal and recovery code"].value_counts()
 
 wasship_ewc_pivoted = wasship_ewc.pivot_table(
     index=[
@@ -153,165 +67,57 @@ wasship_ewc_pivoted = wasship_ewc.pivot_table(
         "Import/export",
         "To or from country",
         "Disposal and recovery code",
-        # "Hazardousness",
-        "Middle_Level_Code",
-        "Middle_Level_Description",
-    ],
-    columns="Year",
-    values="Quantity in tonnes",
-    aggfunc="sum",
-).reset_index()
-
-wasship_ewc_bottom_level = wasship_ewc.pivot_table(
-    index=[
-        "Country reporting",
-        "Import/export",
-        "To or from country",
-        "Disposal and recovery code",
-        # "Hazardousness",
+        "Hazardousness",
+        "Top_Level_Code",
+        "Top_Level_Description",
         "Middle_Level_Code",
         "Middle_Level_Description",
         "Bottom_Level_Code",
         "Bottom_Level_Description",
+        'LoW_Code',
+        'LoW_Description'
     ],
     columns="Year",
     values="Quantity in tonnes",
     aggfunc="sum",
 ).reset_index()
 
-wasship_ewc_pivoted["mean_ship"] = wasship_ewc_pivoted.select_dtypes(
-    include="number"
-).mean(axis=1)
-wasship_ewc_pivoted["std_ship"] = wasship_ewc_pivoted.select_dtypes(
-    include="number"
-).std(axis=1)
-wasship_ewc_bottom_level["mean_ship"] = wasship_ewc_bottom_level.select_dtypes(
-    include="number"
-).mean(axis=1)
-wasship_ewc_bottom_level["std_ship"] = wasship_ewc_bottom_level.select_dtypes(
-    include="number"
-).std(axis=1)
 
-ship_disp = wasship_ewc_pivoted[
-    wasship_ewc_pivoted["Disposal and recovery code"].str.startswith("D")
-]
-ship_disp_exp = wasship_ewc_pivoted[
-    (wasship_ewc_pivoted["Disposal and recovery code"].str.startswith("D"))
-    & (wasship_ewc_pivoted["Import/export"] == "Export")
-]
+wasship_ewc_pivoted.dtypes
+year_cols = wasship_ewc_pivoted.select_dtypes(include='number').columns
 
-nordics_balt = [
-    "Sweden",
-    "Finland",
-    "Denmark",
-    "Norway",
-    "Estonia",
-    "Latvia",
-    "Lithuania",
-]
-ship_disp_exp_nordics_balt = ship_disp_exp[
-    (ship_disp_exp["Country reporting"].isin(nordics_balt))
-    & (ship_disp_exp["To or from country"].isin(nordics_balt))
-]
-middle_level_recycling_potential = (
-    ship_disp_exp_nordics_balt.groupby(
-        [
-            "Country reporting",
-            "Import/export",
-            "To or from country",
-            "Middle_Level_Code",
-            "Disposal and recovery code",
-            "Middle_Level_Description",
-        ]
-    )[["mean_ship", "std_ship"]]
-    .sum()
-    .reset_index()
-    .sort_values(by="mean_ship", ascending=False)
-    .head(20)
+wasship_ewc_pivoted["mean_ship"] = wasship_ewc_pivoted[year_cols].mean(axis=1)
+wasship_ewc_pivoted["std_ship"] = wasship_ewc_pivoted[year_cols].std(axis=1)
+wasship_ewc_pivoted["Years_of_shipment"] = wasship_ewc_pivoted[year_cols].notna().sum(axis=1)
+wasship_ewc_pivoted['First_year_shipment'] = wasship_ewc_pivoted[year_cols].apply(
+    lambda row: row[row.notna()].index.min(),axis=1
+)
+wasship_ewc_pivoted['Last_year_shipment'] = wasship_ewc_pivoted[year_cols].apply(
+    lambda row: row[row.notna()].index.max(),axis=1
 )
 
 
-den_nor = ["Denmark", "Norway"]
-ship_den_nor = wasship_ewc_bottom_level[
-    (wasship_ewc_bottom_level["Country reporting"].isin(den_nor))
-    & (wasship_ewc_bottom_level["To or from country"].isin(den_nor))
-]
-ship_disp_den_nor_32 = ship_den_nor[
-    (ship_den_nor["Disposal and recovery code"].str.startswith("D"))
-    & (ship_den_nor["Middle_Level_Code"] == 3.2)
-]
-ship_den_nor["Middle_Level_Code"].unique()
-
-ship_disp_den_nor_32[ship_disp_den_nor_32["Import/export"] == "Export"]
+wasship_ewc_pivoted
 
 
-recycling_pot = pd.read_csv("../data/raw/EWC-recycling potential2.csv", sep=";")
-recycling_pot.rename(columns={"Category_Code": "Middle_Level_Code"}, inplace=True)
-recycling_pot.dtypes
 
-middle_level_recycling_potential["Middle_Level_Code"] = (
-    middle_level_recycling_potential["Middle_Level_Code"]
-    .astype(str)
-    .str.replace(r"^([1-9])\.", r"0\1.", regex=True)
-)
+wasship_ewc_pivoted.to_csv('../data/interim/wasship_pivoted.csv',sep=';',index=False)
 
-middle_level_recycling_potential["Middle_Level_Code"] = (
-    middle_level_recycling_potential["Middle_Level_Code"].astype(str)
-)
-middle_level_recycling_potential.dtypes
+EU_test = find_exported_waste_for_disposal(wasship_ewc_pivoted,[],25)
+EU_economics = calculate_economic_potential_from_shipment(EU_test,[],20)
+EU_examine = examine_potential_of_middle_level_shipment_data(wasship_ewc_pivoted,'Export',['Italy','Germany'],'12.1')
 
+nordics_test = find_exported_waste_for_disposal(wasship_ewc_pivoted,['Finland','Sweden','Denmark','Norway'],20)
+nordics_economics = calculate_economic_potential_from_shipment(nordics_test,'nordics_test')
+nordics_test_examine = examine_potential_of_middle_level_shipment_data(wasship_ewc_pivoted,'Export',['Denmark','Sweden'],'06.2')
+den_nor_effluent_sludge = examine_potential_of_middle_level_shipment_data(wasship_ewc_pivoted,'Export',['Denmark','Norway'],'03.2')
 
-test = find_economic_potential_from_shipment(
-    middle_level_recycling_potential, "Nordic_shipment_economic_potential"
-)
-test
-
-recycling_potential_nordics = pd.merge(
-    middle_level_recycling_potential,
-    recycling_pot[["Middle_Level_Code", "Recycling_Potential_Index"]],
-    how="inner",
-    on="Middle_Level_Code",
-)
-
-recycling_potential_nordics["Economic_potential"] = (
-    recycling_potential_nordics["mean_ship"]
-    * recycling_potential_nordics["Recycling_Potential_Index"]
-)
-recycling_potential_nordics.rename(
-    columns={
-        "mean_ship": "Mean yearly shipments [tonnes]",
-        "std_ship": "Std. yearly shipments [tonnes]",
-        "Recycling_Potential_Index": "Recycling_Potential_Index [€/tonnes]",
-        "Economic_potential": "Economic_potential [€/year]",
-    },
-    inplace=True,
-)
+nordics_economics.to_csv('../data/interim/Nordic_shipment_economic_potential.csv',sep=';',index=False)
 
 
-recycling_potential_nordics["Economic_potential [€/year]"] = (
-    recycling_potential_nordics["Economic_potential [€/year]"].round(-3)
-)
-recycling_potential_nordics["Uncertainty factor"] = 0.66
-recycling_potential_nordics["Min_economic potential [€/year]"] = (
-    (
-        recycling_potential_nordics["Mean yearly shipments [tonnes]"]
-        - recycling_potential_nordics["Std. yearly shipments [tonnes]"]
-    )
-    * recycling_potential_nordics["Recycling_Potential_Index [€/tonnes]"]
-    * (1 - recycling_potential_nordics["Uncertainty factor"])
-)
-recycling_potential_nordics["Max_economic potential [€/year]"] = (
-    (
-        recycling_potential_nordics["Mean yearly shipments [tonnes]"]
-        + recycling_potential_nordics["Std. yearly shipments [tonnes]"]
-    )
-    * recycling_potential_nordics["Recycling_Potential_Index [€/tonnes]"]
-    * (1 - recycling_potential_nordics["Uncertainty factor"])
-)
+nordics_economics.to_csv('../data/processed/Nordic_shipment_economic_potential.csv',sep=';',index=False)
+nordics_test_examine.to_csv('../data/processed/Swe_Den_Non-Ferrous_Exp_Waste_For_Disposal.csv',sep=';',index=False,)
+den_nor_effluent_sludge.to_csv('../data/processed/Nor_Den_Effluent_Sludge_Exp_Waste_For_Disposal.csv',sep=';',index=False,)
 
-recycling_potential_nordics.sort_values(
-    by="Economic_potential [€/year]", ascending=False
-)
-recycling_potential_nordics.sort_values(
-    by="Economic_potential [€/year]", ascending=False
-).to_csv("../data/interim/nordic_shipment_rceycling_potential_test.csv", index=False)
+
+

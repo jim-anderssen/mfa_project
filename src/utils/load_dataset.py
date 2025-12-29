@@ -1,5 +1,6 @@
 import pandas as pd
 import eurostat
+import numpy as np
 
 
 def load_dataset(datacode: str):
@@ -43,3 +44,30 @@ def extract_tonnes_row(df):
         return df[df["unit"] == "T"]
     else:
         return df
+
+
+def load_shipment_data_with_EWC_codes():
+    wasship_df = pd.read_excel(
+        "../data/raw/Waste_shipment_data_imports_exports_20250927.xlsx", header=8
+    )
+
+    wasship_df.rename(columns={"European List of Waste code": "LoW_Code"}, inplace=True)
+
+    LoW_to_EWC_df = pd.read_csv("../data/interim/EWC_LoW_codes.csv", sep=";", dtype=str)
+    LoW_to_EWC_df["Middle_Level_Code"] = (
+        LoW_to_EWC_df["Middle_Level_Code"]
+        .astype(str)
+        .str.replace(r"^([1-9])\.", r"0\1.", regex=True)
+    )
+    LoW_to_EWC_df["LoW_Code"] = LoW_to_EWC_df["LoW_Code"].str.replace(" ", "")
+
+    wasship_df[["Population", "Quantity in kg per capita"]] = wasship_df[
+        ["Population", "Quantity in kg per capita"]
+    ].apply(pd.to_numeric, errors="coerce")
+
+    return pd.merge(
+        wasship_df,
+        LoW_to_EWC_df,
+        how="inner",
+        on="LoW_Code",
+    )

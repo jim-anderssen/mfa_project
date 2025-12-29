@@ -1,5 +1,5 @@
 [project]
-name = "datalumina-project-template"
+name = "mfa-project"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -12,3 +12,8 @@ dependencies = [
 dev = [
     "ipykernel>=7.0.0",
 ]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
