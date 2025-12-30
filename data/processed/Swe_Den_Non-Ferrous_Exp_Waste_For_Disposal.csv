@@ -1,2 +1,2 @@
-mean_ship,std_ship,Years_of_shipment
-4378.06,0.0,1.0
+Country reporting,Import/export,To or from country,Disposal and recovery code,Middle_Level_Code,Middle_Level_Description,Bottom_Level_Code,Bottom_Level_Description,LoW_Code,LoW_Description,mean_ship,std_ship,Years_of_shipment
+Denmark,Export,Sweden,D1,06.2,Metal wastes non-ferrous,6.26,Other metal wastes,191002,non-ferrous waste,4378.06,0.0,1.0

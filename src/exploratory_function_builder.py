@@ -95,29 +95,24 @@ wasship_ewc_pivoted['First_year_shipment'] = wasship_ewc_pivoted[year_cols].appl
 wasship_ewc_pivoted['Last_year_shipment'] = wasship_ewc_pivoted[year_cols].apply(
     lambda row: row[row.notna()].index.max(),axis=1
 )
-
-
-wasship_ewc_pivoted
-
-
-
 wasship_ewc_pivoted.to_csv('../data/interim/wasship_pivoted.csv',sep=';',index=False)
 
 EU_test = find_exported_waste_for_disposal(wasship_ewc_pivoted,[],25)
-EU_economics = calculate_economic_potential_from_shipment(EU_test,[],20)
-EU_examine = examine_potential_of_middle_level_shipment_data(wasship_ewc_pivoted,'Export',['Italy','Germany'],'12.1')
+EU_economics = calculate_economic_potential_from_shipment(EU_test,'EU_test')
+EU_examine = examine_potential_of_middle_level_shipment_data(wasship_ewc_pivoted,'Export',['Italy','Germany'],'12.1',True)
 
 nordics_test = find_exported_waste_for_disposal(wasship_ewc_pivoted,['Finland','Sweden','Denmark','Norway'],20)
 nordics_economics = calculate_economic_potential_from_shipment(nordics_test,'nordics_test')
-nordics_test_examine = examine_potential_of_middle_level_shipment_data(wasship_ewc_pivoted,'Export',['Denmark','Sweden'],'06.2')
-den_nor_effluent_sludge = examine_potential_of_middle_level_shipment_data(wasship_ewc_pivoted,'Export',['Denmark','Norway'],'03.2')
+nordics_test_examine = examine_potential_of_middle_level_shipment_data(wasship_ewc_pivoted,'Export',['Denmark','Sweden'],'06.2',True,True).reset_index()
+den_nor_effluent_sludge = examine_potential_of_middle_level_shipment_data(wasship_ewc_pivoted,'Export',['Denmark','Norway'],'03.2',True,True).reset_index()
+
 
 nordics_economics.to_csv('../data/interim/Nordic_shipment_economic_potential.csv',sep=';',index=False)
 
 
-nordics_economics.to_csv('../data/processed/Nordic_shipment_economic_potential.csv',sep=';',index=False)
-nordics_test_examine.to_csv('../data/processed/Swe_Den_Non-Ferrous_Exp_Waste_For_Disposal.csv',sep=';',index=False,)
-den_nor_effluent_sludge.to_csv('../data/processed/Nor_Den_Effluent_Sludge_Exp_Waste_For_Disposal.csv',sep=';',index=False,)
+nordics_economics.to_csv('../data/processed/Nordic_shipment_economic_potential.csv',sep=',',index=False)
+nordics_test_examine.to_csv('../data/processed/Swe_Den_Non-Ferrous_Exp_Waste_For_Disposal.csv',sep=',',index=False,)
+den_nor_effluent_sludge.to_csv('../data/processed/Nor_Den_Effluent_Sludge_Exp_Waste_For_Disposal.csv',sep=',',index=False,)
 
 
 
