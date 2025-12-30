@@ -3,6 +3,7 @@ import eurostat
 import numpy as np
 
 
+# Loads eurostat dataset
 def load_dataset(datacode: str):
     dataset = eurostat.get_data_df(datacode, flags=False)
 
@@ -46,6 +47,7 @@ def extract_tonnes_row(df):
         return df
 
 
+# Loads the shipment data (containing LoW codes) and merges it with EWC-Stat codes
 def load_shipment_data_with_EWC_codes():
     wasship_df = pd.read_excel(
         "../data/raw/Waste_shipment_data_imports_exports_20250927.xlsx", header=8

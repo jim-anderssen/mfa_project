@@ -1,6 +1,7 @@
 import pandas as pd
 
 
+# Calculates economic potential and ranges using estimated Recycling potential indices and uncertainty factors.
 def calculate_economic_potential_from_shipment(shipment_df, save_filename: str):
     # Read recycling potential data
     recycling_potential_df = pd.read_csv(
