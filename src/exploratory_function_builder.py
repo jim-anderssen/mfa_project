@@ -109,10 +109,26 @@ den_nor_effluent_sludge = examine_potential_of_middle_level_shipment_data(wasshi
 
 nordics_economics.to_csv('../data/interim/Nordic_shipment_economic_potential.csv',sep=';',index=False)
 
+EU_economics.to_csv('../data/processed/EU_shipment_economic_potential.csv',sep=',',index=False)
 
 nordics_economics.to_csv('../data/processed/Nordic_shipment_economic_potential.csv',sep=',',index=False)
 nordics_test_examine.to_csv('../data/processed/Swe_Den_Non-Ferrous_Exp_Waste_For_Disposal.csv',sep=',',index=False,)
 den_nor_effluent_sludge.to_csv('../data/processed/Nor_Den_Effluent_Sludge_Exp_Waste_For_Disposal.csv',sep=',',index=False,)
+
+
+year_cols_and_mean_std = list(year_cols)+['mean_ship','std_ship']
+
+
+test = wasship_ewc_pivoted.groupby(['Country reporting',
+                             'Import/export',
+                             'To or from country',
+                             'Middle_Level_Code',
+                             'Middle_Level_Description',
+                             'LoW_Code',
+                             'LoW_Description'
+                             ])[year_cols_and_mean_std].sum().reset_index().sort_values(by='mean_ship',ascending=False).round(-3)
+
+test[(test['Import/export']=='Export')].head(50).to_csv("../data/processed/All_EU_largest_shipments.csv",sep=',',index=False)
 
 
 

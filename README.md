@@ -13,6 +13,10 @@ The overarching goal is to provide highly-detailed statistics (as detailed as po
 - The 2 other datasets are the main interesting shipments from the previous dataset, but all other recorded shipments of the same waste between the same countries. This also includes the 6-digit LoW codes, which are more detailed, and allows for analysing the waste homogeneity. 
     - These will be streamlined in the future for better readability.
 
+- Waste generation shows an example of the top 50 largest recorded waste generations in metal industries (Nace2 = C24,C25)
+
+## See notebooks/show_dataset_structure for other available data from Eurostats datasets
+
 
 ## Project Organization (template)
 

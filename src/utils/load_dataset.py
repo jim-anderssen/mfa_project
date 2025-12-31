@@ -13,9 +13,10 @@ def load_dataset(datacode: str):
         print(f"Exception: {e}")
         pass
     try:
-        dataset[f"mean_{datacode[4:]}"] = dataset.select_dtypes(include="number").mean(
-            axis=1
-        )
+        year_cols = dataset.select_dtypes(include="number").columns
+        dataset[f"mean_{datacode[4:]}"] = dataset[year_cols].mean(axis=1)
+        dataset[f"std_{datacode[4:]}"] = dataset[year_cols].std(axis=1)
+        dataset["Number_of_years"] = dataset[year_cols].notna().sum(axis=1)
     except Exception as e:
         print(f"Exception: {e}")
     labels = eurostat.get_dic(datacode)
