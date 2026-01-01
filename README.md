@@ -4,6 +4,8 @@ This is a repository for analysing material/waste stocks and flows through Euros
 
 The overarching goal is to provide highly-detailed statistics (as detailed as possible) for generation, treatment and shipment of waste, which will allow for data-driven decision-making for investments in recycling/recovery technology.
 
+## See notebooks/Example study for a brief walkthrough of the project's central concept.
+
 ## See data/processed for first examples of the type of data intended to be produced in this repo:
 
 - The "Nordic_shipment_economic_potential" dataset is aggregated shipments of disposed waste per EWC-Stat Level 2 code, with mean and std. of yearly shipments (tonnes).

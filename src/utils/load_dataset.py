@@ -51,12 +51,12 @@ def extract_tonnes_row(df):
 # Loads the shipment data (containing LoW codes) and merges it with EWC-Stat codes
 def load_shipment_data_with_EWC_codes():
     wasship_df = pd.read_excel(
-        "../data/raw/Waste_shipment_data_imports_exports_20250927.xlsx", header=8
+        "data/raw/Waste_shipment_data_imports_exports_20250927.xlsx", header=8
     )
 
     wasship_df.rename(columns={"European List of Waste code": "LoW_Code"}, inplace=True)
 
-    LoW_to_EWC_df = pd.read_csv("../data/interim/EWC_LoW_codes.csv", sep=";", dtype=str)
+    LoW_to_EWC_df = pd.read_csv("data/interim/EWC_LoW_codes.csv", sep=";", dtype=str)
     LoW_to_EWC_df["Middle_Level_Code"] = (
         LoW_to_EWC_df["Middle_Level_Code"]
         .astype(str)
