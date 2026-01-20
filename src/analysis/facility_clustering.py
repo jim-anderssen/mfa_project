@@ -121,7 +121,7 @@ def _extract_ied_major_category(ied_activity: str) -> str:
 
 def create_facility_feature_matrix(
     df: pd.DataFrame
-) -> Tuple[pd.DataFrame, pd.DataFrame]:
+) -> Tuple[pd.DataFrame, pd.DataFrame, np.ndarray]:
     """
     Create feature matrix for facility clustering.
 
@@ -139,9 +139,10 @@ def create_facility_feature_matrix(
     Returns
     -------
     tuple
-        (facility_info_df, feature_matrix_df)
+        (facility_info_df, feature_matrix_df, coords)
         - facility_info_df: Facility metadata (id, name, country, lat, lon, total_tonnes)
         - feature_matrix_df: Feature matrix indexed by facility_id
+        - coords: Array of shape (n_facilities, 2) with [lat, lon] for geographic constraints
     """
     # Aggregate total tonnes per facility
     facility_totals = df.groupby('facility_id')['allocated_tonnes'].sum().rename('total_tonnes')
@@ -201,22 +202,36 @@ def create_facility_feature_matrix(
     print(f"  - IED features: {len([c for c in feature_matrix.columns if c.startswith('ied_')])}")
     print(f"  - Volume feature: 1")
 
-    return facility_info, feature_matrix
+    # Extract coordinates for geographic constraints (ordered by facility_id to match feature_matrix index)
+    facility_info_indexed = facility_info.set_index('facility_id').loc[feature_matrix.index]
+    coords = facility_info_indexed[['lat', 'lon']].values
+
+    return facility_info, feature_matrix, coords
 
 
 def apply_hierarchical_clustering(
     features: pd.DataFrame,
+    coords: Optional[np.ndarray] = None,
+    max_distance_km: Optional[float] = None,
     method: str = 'ward',
     k_range: range = range(3, 13),
     random_state: int = 42
-) -> Tuple[np.ndarray, np.ndarray, int, float]:
+) -> Tuple[np.ndarray, Optional[np.ndarray], int, float]:
     """
     Apply agglomerative hierarchical clustering with automatic k selection.
+
+    Optionally applies geographic connectivity constraints to ensure all facilities
+    within a cluster are within max_distance_km of each other.
 
     Parameters
     ----------
     features : pd.DataFrame
         Feature matrix from create_facility_feature_matrix()
+    coords : np.ndarray, optional
+        Array of shape (n, 2) with [lat, lon] for geographic constraints
+    max_distance_km : float, optional
+        Maximum distance in km between facilities in the same cluster.
+        If provided along with coords, enables connectivity-constrained clustering.
     method : str
         Linkage method for hierarchical clustering ('ward', 'complete', 'average')
     k_range : range
@@ -229,30 +244,75 @@ def apply_hierarchical_clustering(
     tuple
         (labels, linkage_matrix, optimal_k, silhouette_score)
         - labels: Cluster assignments (0-indexed)
-        - linkage_matrix: Scipy linkage matrix for dendrogram
+        - linkage_matrix: Scipy linkage matrix for dendrogram (None if using connectivity)
         - optimal_k: Best number of clusters found
         - silhouette_score: Silhouette score for optimal clustering
     """
+    from scipy.sparse import csr_matrix
+
     # Standardize features
     scaler = StandardScaler()
     X_scaled = scaler.fit_transform(features.values)
 
-    # Compute linkage matrix for dendrogram
-    Z = linkage(X_scaled, method=method)
+    # Build connectivity matrix if geographic constraints are specified
+    connectivity = None
+    use_connectivity = coords is not None and max_distance_km is not None
+
+    if use_connectivity:
+        print(f"Applying geographic constraint: max {max_distance_km} km between facilities")
+        dist_matrix = _haversine_distance_matrix(coords)
+        connectivity = (dist_matrix <= max_distance_km).astype(int)
+        # Use sparse matrix for efficiency
+        connectivity = csr_matrix(connectivity)
+
+        # Check connectivity - warn if some facilities are isolated
+        n_connected = (connectivity.sum(axis=1) > 1).sum()
+        n_total = len(coords)
+        if n_connected < n_total:
+            print(f"Warning: {n_total - n_connected} facilities have no neighbors within {max_distance_km} km")
 
     # Evaluate different k values
     silhouettes = []
+    Z = None  # Linkage matrix (only computed without connectivity)
 
-    for k in k_range:
-        # Use scipy fcluster for hierarchical cut
-        temp_labels = fcluster(Z, t=k, criterion='maxclust') - 1  # 0-indexed
+    if not use_connectivity:
+        # Standard hierarchical clustering with scipy linkage
+        Z = linkage(X_scaled, method=method)
 
-        if len(np.unique(temp_labels)) > 1:
-            score = silhouette_score(X_scaled, temp_labels)
-        else:
-            score = -1  # Invalid if only one cluster
+        for k in k_range:
+            temp_labels = fcluster(Z, t=k, criterion='maxclust') - 1  # 0-indexed
 
-        silhouettes.append(score)
+            if len(np.unique(temp_labels)) > 1:
+                score = silhouette_score(X_scaled, temp_labels)
+            else:
+                score = -1
+
+            silhouettes.append(score)
+    else:
+        # Connectivity-constrained clustering with sklearn
+        for k in k_range:
+            model = AgglomerativeClustering(
+                n_clusters=k,
+                metric='euclidean',
+                linkage=method if method in ['complete', 'average', 'single'] else 'ward',
+                connectivity=connectivity
+            )
+            try:
+                temp_labels = model.fit_predict(X_scaled)
+
+                if len(np.unique(temp_labels)) > 1:
+                    score = silhouette_score(X_scaled, temp_labels)
+                else:
+                    score = -1
+            except Exception as e:
+                # Connectivity constraints may prevent certain k values
+                print(f"Warning: k={k} failed with connectivity constraint: {e}")
+                score = -1
+
+            silhouettes.append(score)
+
+        # Generate linkage matrix without constraints for dendrogram visualization
+        Z = linkage(X_scaled, method=method)
 
     # Find optimal k
     best_idx = np.argmax(silhouettes)
@@ -260,12 +320,57 @@ def apply_hierarchical_clustering(
     best_silhouette = silhouettes[best_idx]
 
     # Get final labels with optimal k
-    labels = fcluster(Z, t=optimal_k, criterion='maxclust') - 1  # 0-indexed
+    if not use_connectivity:
+        labels = fcluster(Z, t=optimal_k, criterion='maxclust') - 1  # 0-indexed
+    else:
+        model = AgglomerativeClustering(
+            n_clusters=optimal_k,
+            metric='euclidean',
+            linkage=method if method in ['complete', 'average', 'single'] else 'ward',
+            connectivity=connectivity
+        )
+        labels = model.fit_predict(X_scaled)
 
     print(f"Optimal k={optimal_k} with silhouette score={best_silhouette:.3f}")
     print(f"Silhouette scores by k: {dict(zip(k_range, [f'{s:.3f}' for s in silhouettes]))}")
 
+    if use_connectivity:
+        # Verify geographic constraint is satisfied
+        _verify_cluster_distances(coords, labels, max_distance_km)
+
     return labels, Z, optimal_k, best_silhouette
+
+
+def _verify_cluster_distances(
+    coords: np.ndarray,
+    labels: np.ndarray,
+    max_distance_km: float
+) -> None:
+    """
+    Verify that all facilities within each cluster are within max_distance_km of each other.
+    Prints a warning if any cluster violates the constraint.
+    """
+    dist_matrix = _haversine_distance_matrix(coords)
+    violations = []
+
+    for cluster_id in np.unique(labels):
+        cluster_mask = labels == cluster_id
+        cluster_indices = np.where(cluster_mask)[0]
+
+        if len(cluster_indices) > 1:
+            # Get max distance within this cluster
+            cluster_dists = dist_matrix[np.ix_(cluster_indices, cluster_indices)]
+            max_dist = cluster_dists.max()
+
+            if max_dist > max_distance_km:
+                violations.append((cluster_id, max_dist, len(cluster_indices)))
+
+    if violations:
+        print(f"Warning: {len(violations)} clusters exceed max_distance_km constraint:")
+        for cluster_id, max_dist, n_facilities in violations[:5]:  # Show first 5
+            print(f"  Cluster {cluster_id}: max distance {max_dist:.1f} km ({n_facilities} facilities)")
+    else:
+        print(f"All clusters satisfy the {max_distance_km} km distance constraint")
 
 
 def summarize_facility_clusters(
@@ -408,17 +513,18 @@ def save_clustering_results(
 def plot_facility_clusters(
     facility_df: pd.DataFrame,
     labels: np.ndarray,
-    linkage_matrix: np.ndarray,
+    linkage_matrix: Optional[np.ndarray],
     summary_df: pd.DataFrame,
     output_path: Optional[str] = None
 ):
     """
     Create visualization of facility clustering results.
 
-    Produces a figure with three subplots:
-    1. Dendrogram showing hierarchical structure
+    Produces a figure with four subplots:
+    1. Dendrogram showing hierarchical structure (or note if using connectivity constraints)
     2. Geographic scatter plot of facilities colored by cluster
     3. Cluster composition bar chart
+    4. Total waste by cluster
 
     Parameters
     ----------
@@ -426,8 +532,9 @@ def plot_facility_clusters(
         Facility info dataframe
     labels : np.ndarray
         Cluster assignments
-    linkage_matrix : np.ndarray
-        Scipy linkage matrix from apply_hierarchical_clustering()
+    linkage_matrix : np.ndarray, optional
+        Scipy linkage matrix from apply_hierarchical_clustering().
+        May be None if connectivity constraints were used.
     summary_df : pd.DataFrame
         Cluster summary from summarize_facility_clusters()
     output_path : str, optional
@@ -454,17 +561,23 @@ def plot_facility_clusters(
 
     # Subplot 1: Dendrogram
     ax1 = fig.add_subplot(2, 2, 1)
-    dendrogram(
-        linkage_matrix,
-        truncate_mode='lastp',
-        p=30,  # Show only last 30 merges
-        leaf_rotation=90,
-        leaf_font_size=8,
-        ax=ax1
-    )
-    ax1.set_title('Hierarchical Clustering Dendrogram', fontsize=12, fontweight='bold')
-    ax1.set_xlabel('Cluster Size')
-    ax1.set_ylabel('Distance')
+    if linkage_matrix is not None:
+        dendrogram(
+            linkage_matrix,
+            truncate_mode='lastp',
+            p=30,  # Show only last 30 merges
+            leaf_rotation=90,
+            leaf_font_size=8,
+            ax=ax1
+        )
+        ax1.set_title('Hierarchical Clustering Dendrogram', fontsize=12, fontweight='bold')
+        ax1.set_xlabel('Cluster Size')
+        ax1.set_ylabel('Distance')
+    else:
+        ax1.text(0.5, 0.5, 'Dendrogram not available\n(connectivity-constrained clustering)',
+                 ha='center', va='center', fontsize=12, transform=ax1.transAxes)
+        ax1.set_title('Dendrogram', fontsize=12, fontweight='bold')
+        ax1.axis('off')
 
     # Subplot 2: Geographic scatter plot
     ax2 = fig.add_subplot(2, 2, 2)
@@ -549,6 +662,7 @@ def plot_facility_clusters(
 def run_facility_clustering_pipeline(
     data_path: Optional[str] = None,
     min_tonnes: float = 5000,
+    max_distance_km: Optional[float] = None,
     method: str = 'ward',
     k_range: range = range(3, 13),
     save_results: bool = True,
@@ -563,6 +677,10 @@ def run_facility_clustering_pipeline(
         Path to facility_waste_allocated.csv
     min_tonnes : float
         Minimum tonnes threshold for including facilities
+    max_distance_km : float, optional
+        Maximum distance in km between facilities in the same cluster.
+        If provided, enables connectivity-constrained clustering to ensure
+        geographic proximity within clusters (e.g., 300-500 km).
     method : str
         Hierarchical clustering linkage method
     k_range : range
@@ -579,6 +697,7 @@ def run_facility_clustering_pipeline(
         - filtered_data: Filtered facility data
         - facility_info: Facility metadata
         - feature_matrix: Clustering features
+        - coords: Geographic coordinates array
         - labels: Cluster assignments
         - linkage_matrix: Scipy linkage matrix
         - optimal_k: Best cluster count
@@ -588,6 +707,8 @@ def run_facility_clustering_pipeline(
     """
     print("=" * 60)
     print("FACILITY HIERARCHICAL CLUSTERING PIPELINE")
+    if max_distance_km:
+        print(f"(with geographic constraint: max {max_distance_km} km)")
     print("=" * 60)
 
     # Step 1: Load and filter
@@ -596,12 +717,16 @@ def run_facility_clustering_pipeline(
 
     # Step 2: Create features
     print("\n2. Creating feature matrix...")
-    facility_info, feature_matrix = create_facility_feature_matrix(filtered_data)
+    facility_info, feature_matrix, coords = create_facility_feature_matrix(filtered_data)
 
     # Step 3: Cluster
     print("\n3. Applying hierarchical clustering...")
     labels, Z, optimal_k, sil_score = apply_hierarchical_clustering(
-        feature_matrix, method=method, k_range=k_range
+        feature_matrix,
+        coords=coords,
+        max_distance_km=max_distance_km,
+        method=method,
+        k_range=k_range
     )
 
     # Step 4: Summarize
@@ -620,10 +745,12 @@ def run_facility_clustering_pipeline(
         'filtered_data': filtered_data,
         'facility_info': facility_info,
         'feature_matrix': feature_matrix,
+        'coords': coords,
         'labels': labels,
         'linkage_matrix': Z,
         'optimal_k': optimal_k,
         'silhouette_score': sil_score,
+        'max_distance_km': max_distance_km,
         'summary': summary,
     }
 
