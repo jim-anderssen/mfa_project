@@ -1,6 +1,13 @@
 """
 E-PRTR (European Pollutant Release and Transfer Register) data loader.
 
+DEPRECATED: Use src/loaders/eprtr_emissions.py instead.
+- For allocation: use get_facility_emissions_for_allocation()
+- For tensor analysis: use load_all_emissions(), build_emission_tensor()
+
+This module uses synthetic emissions from sector averages as fallback.
+The eprtr_emissions module loads actual reported E-PRTR emissions.
+
 Downloads and processes pollutant release data from EEA for use in
 facility-level waste allocation based on emissions as allocation proxy.
 

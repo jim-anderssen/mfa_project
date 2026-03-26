@@ -1,10 +1,10 @@
 import pandas as pd
 import numpy as np
-from utils.load_dataset import load_dataset
-from utils.load_dataset import load_shipment_data_with_EWC_codes
-from utils.calculate_economic_potential import calculate_economic_potential_from_shipment
-from utils.queries import examine_potential_of_middle_level_shipment_data
-from utils.queries import find_exported_waste_for_disposal
+#from utils.load_dataset import load_dataset
+from src.utils.load_dataset import load_shipment_data_with_EWC_codes
+from src.utils.calculate_economic_potential import calculate_economic_potential_from_shipment
+from src.utils.queries import examine_potential_of_middle_level_shipment_data
+from src.utils.queries import find_exported_waste_for_disposal
 
 %load_ext autoreload
 %autoreload 2
@@ -13,8 +13,8 @@ pd.options.display.max_columns = 999
 pd.options.display.max_rows = 25
 
 
-wasgen = load_dataset("env_wasgen")
-wastrt = load_dataset("env_wastrt")
+#wasgen = load_dataset("env_wasgen")
+#wastrt = load_dataset("env_wastrt")
 
 def smart_format(x):
     if pd.isna(x):
@@ -130,5 +130,8 @@ test = wasship_ewc_pivoted.groupby(['Country reporting',
 
 test[(test['Import/export']=='Export')].head(50).to_csv("../data/processed/All_EU_largest_shipments.csv",sep=',',index=False)
 
+
+
+wasship_ewc
 
 

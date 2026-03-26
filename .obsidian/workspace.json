@@ -1,0 +1,235 @@
+{
+  "main": {
+    "id": "8d4cb5bca8e2ad1a",
+    "type": "split",
+    "children": [
+      {
+        "id": "459827eeff89c5fd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ca50b0859b009593",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Notes"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "efcb6e0d4a070c96",
+    "type": "split",
+    "children": [
+      {
+        "id": "c016d7a5478be55f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "da84c7f203762ed1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "114bc6e48ec1b628",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "e13259e2f8cc063f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 362.5
+  },
+  "right": {
+    "id": "ea75329cfeb73584",
+    "type": "split",
+    "children": [
+      {
+        "id": "e158113c781a7b9f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "671e3eaf50d4dc2a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docs/brainstorming/emissions_based_waste_characterization.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for emissions_based_waste_characterization"
+            }
+          },
+          {
+            "id": "308cb62599b4f223",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "docs/brainstorming/emissions_based_waste_characterization.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from emissions_based_waste_characterization"
+            }
+          },
+          {
+            "id": "db271cfb2ef250dc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "304c412a4ba8532a",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "d6dc411d7af60f4a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "docs/brainstorming/emissions_based_waste_characterization.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of emissions_based_waste_characterization"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "ca50b0859b009593",
+  "lastOpenFiles": [
+    "ISSUES.md",
+    "Notes.md",
+    "docs/brainstorming/presentations/~$Progress_summary_6_Feb.tmp",
+    "data/processed/eprtr_wasgen_comparison/multi_C24_C25_summary.csv",
+    "data/processed/eprtr_wasgen_comparison/multi_C24_C25.csv",
+    "data/processed/eprtr_wasgen_comparison/FI_C24_C25.csv",
+    "data/processed/eprtr_wasgen_comparison/DE_C24_C25.csv",
+    "data/processed/eprtr_wasgen_comparison/SE_C24_C25.csv",
+    "data/processed/eprtr_wasgen_comparison/PL_C24_C25.csv",
+    "src/analysis/__pycache__/__init__.cpython-313.pyc",
+    "data/processed/eprtr_wasgen_comparison",
+    "src/analysis/one_off/__pycache__/compare_eprtr_wasgen.cpython-312.pyc",
+    "data/raw/eprtr_2025/README.md",
+    "data/raw/eprtr_2025/CompletenessOverview.png",
+    "data/raw/eprtr_2025/eea_t_ied-eprtr_p_2007-2023_v15_r00/README.md",
+    "data/raw/eprtr_2025/eea_t_ied-eprtr_p_2007-2023_v15_r00/CompletenessOverview.png",
+    "docs/reports/waste_reporting_discrepancy_analysis.md",
+    "docs/brainstorming/presentations/Progress summary presentation 6 Feb.md",
+    "reports/figures/features_first_subgroups.png",
+    "reports/figures/facility_clustering_results.png",
+    "docs/reports/allocation_limitations.md",
+    "docs/reports/waste_allocation_coverage_analysis.md",
+    "docs/reports/prodcom_waste_coefficients_review.md",
+    "docs/reports/facility_waste_validation.md",
+    "tasks/project_tasks.md",
+    "prompts/Process classifying, waste generation, waste allocation pipeline.md",
+    "prompts/Estimating process wastes and reported wastes.md",
+    "prompts/Choosing the right allocation approach.md",
+    "docs/references/BREF_BAT/Input-output tables/IS/BF output_4.png",
+    "docs/references/BREF_BAT/Input-output tables/IS/Screenshot 2026-01-31 at 21.08.10.png",
+    "docs/references/BREF_BAT/Input-output tables/Screenshot 2026-01-31 at 21.08.10.png",
+    "docs/references/BREF_BAT/Input-output tables/IS/BF output_3.png",
+    "docs/references/BREF_BAT/Input-output tables/IS/Screenshot 2026-01-31 at 20.43.21.png",
+    "docs/references/BREF_BAT/Input-output tables/IS/BF output_2.png",
+    "tasks/facility_allocation_pipeline.md",
+    "SCHEMA.md",
+    "prompts/gva_based_allocator/Error in wasgen_df processing.md",
+    "docs/brainstorming/emissions_based_waste_characterization.md",
+    "tasks/steel_tracker_validation.md",
+    "tasks/gva_allocator_implementation.md",
+    "docs/brainstorming/economic_proxies_for_waste.md",
+    "docs/brainstorming/waste_generation_interpretation.md",
+    "docs/brainstorming/tensor_guided_waste_allocation.md",
+    "docs/brainstorming/data_sources/waste_secondary_materials_databases.md",
+    "docs/brainstorming/data_sources/ecoinvent_lci_databases.md",
+    "docs/brainstorming/data_sources/IEDC_database_guide.md"
+  ]
+}

@@ -185,6 +185,12 @@ IED_TO_NACE = {
         'bat_ref': 'LCP',
         'prodcom_relevant': True,
     },
+    '1.4(b)': {
+        'nace': ['19.10', '35.21'],
+        'description': 'Coal gasification and liquefaction plants',
+        'bat_ref': 'LCP',
+        'prodcom_relevant': True,
+    },
 
     # Chapter II: Production and processing of metals
     '2.1': {
@@ -202,6 +208,24 @@ IED_TO_NACE = {
     '2.3': {
         'nace': ['24.10', '24.20', '24.31', '24.32', '24.33', '24.34'],
         'description': 'Hot-rolling mills, forges, foundries > 20t/hr',
+        'bat_ref': 'FMP',
+        'prodcom_relevant': True,
+    },
+    '2.3(a)': {
+        'nace': ['24.10', '24.20'],
+        'description': 'Hot-rolling mills > 20t/hr',
+        'bat_ref': 'FMP',
+        'prodcom_relevant': True,
+    },
+    '2.3(b)': {
+        'nace': ['24.10', '24.31', '24.32', '24.33', '24.34'],
+        'description': 'Smitheries with hammers > 50kJ',
+        'bat_ref': 'FMP',
+        'prodcom_relevant': True,
+    },
+    '2.3(c)': {
+        'nace': ['25.61'],
+        'description': 'Protective fused metal coatings > 2t/hr',
         'bat_ref': 'FMP',
         'prodcom_relevant': True,
     },
@@ -287,6 +311,60 @@ IED_TO_NACE = {
         'bat_ref': 'POL',
         'prodcom_relevant': True,
     },
+    '4.1(c)': {
+        'nace': ['20.14'],
+        'description': 'Oxygen-containing hydrocarbons',
+        'bat_ref': 'LVOC',
+        'prodcom_relevant': True,
+    },
+    '4.1(d)': {
+        'nace': ['20.14'],
+        'description': 'Sulphur-containing hydrocarbons',
+        'bat_ref': 'LVOC',
+        'prodcom_relevant': True,
+    },
+    '4.1(e)': {
+        'nace': ['20.15'],
+        'description': 'Nitrogen-containing hydrocarbons',
+        'bat_ref': 'LVOC',
+        'prodcom_relevant': True,
+    },
+    '4.1(f)': {
+        'nace': ['20.14'],
+        'description': 'Halogen-containing hydrocarbons',
+        'bat_ref': 'LVOC',
+        'prodcom_relevant': True,
+    },
+    '4.1(g)': {
+        'nace': ['20.14'],
+        'description': 'Organometallic compounds',
+        'bat_ref': 'LVOC',
+        'prodcom_relevant': True,
+    },
+    '4.1(h)': {
+        'nace': ['20.16'],
+        'description': 'Plastics (PVC, PE, PP, PS, etc.)',
+        'bat_ref': 'POL',
+        'prodcom_relevant': True,
+    },
+    '4.1(i)': {
+        'nace': ['20.14'],
+        'description': 'Phosphorus-containing hydrocarbons',
+        'bat_ref': 'LVOC',
+        'prodcom_relevant': True,
+    },
+    '4.1(j)': {
+        'nace': ['20.14', '20.59'],
+        'description': 'Surface-active agents and surfactants',
+        'bat_ref': 'LVOC',
+        'prodcom_relevant': True,
+    },
+    '4.1(k)': {
+        'nace': ['20.14', '20.59'],
+        'description': 'Other organic chemicals n.e.c.',
+        'bat_ref': 'LVOC',
+        'prodcom_relevant': True,
+    },
     '4.2(a)': {
         'nace': ['20.11', '20.13', '20.15'],
         'description': 'Inorganic chemicals production',
@@ -296,6 +374,24 @@ IED_TO_NACE = {
     '4.2(b)': {
         'nace': ['20.15'],
         'description': 'Fertilizers production',
+        'bat_ref': 'LVIC',
+        'prodcom_relevant': True,
+    },
+    '4.2(c)': {
+        'nace': ['20.13'],
+        'description': 'Production of bases (ammonia, sodium hydroxide, etc.)',
+        'bat_ref': 'LVIC',
+        'prodcom_relevant': True,
+    },
+    '4.2(d)': {
+        'nace': ['20.13'],
+        'description': 'Production of salts (ammonium chloride, etc.)',
+        'bat_ref': 'LVIC',
+        'prodcom_relevant': True,
+    },
+    '4.2(e)': {
+        'nace': ['20.13'],
+        'description': 'Production of non-metals (silicon, phosphorus, etc.)',
         'bat_ref': 'LVIC',
         'prodcom_relevant': True,
     },
@@ -314,6 +410,12 @@ IED_TO_NACE = {
     '4.5': {
         'nace': ['20.51', '20.52', '20.53', '20.59'],
         'description': 'Explosives production',
+        'bat_ref': 'OFC',
+        'prodcom_relevant': True,
+    },
+    '4.6': {
+        'nace': ['20.59'],
+        'description': 'Other chemical products n.e.c.',
         'bat_ref': 'OFC',
         'prodcom_relevant': True,
     },

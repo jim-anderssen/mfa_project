@@ -5,6 +5,7 @@ Modules:
 - io: File I/O operations
 - eurostat: Eurostat API data loading
 - nuts2: NUTS2 regional data loading
+- retriever: Swedish company data loading
 """
 
 from .io import (
@@ -29,6 +30,7 @@ from .nuts2 import (
     get_sbs_nuts2_employment,
     compute_sbs_proxy,
 )
+from .retriever import load_swedish_companies, parse_sni_to_nace
 
 __all__ = [
     # io
@@ -52,4 +54,7 @@ __all__ = [
     "load_recycling_potential",
     "get_sbs_nuts2_employment",
     "compute_sbs_proxy",
+    # retriever
+    "load_swedish_companies",
+    "parse_sni_to_nace",
 ]

@@ -1,0 +1,9 @@
+In @"docs/references/BREF_BAT/Input-output tables/IS/", there's examples of emission levels per tonne liquid steel (LS) for EAF and BOF. Also wastes per t LS.
+
+This can first serve as reference data to identify technology for a facility (assuming the ranges don't overlap completely). As we've done e.g. in @src/allocation/technology_identifier.py. Could you examine how much overlap there is in the emissions data between the EAF/BOF from the I/O tables, and whether they can serve as technology identifying reference data?
+
+Then with each facility classified, we can quantify generated ranges of process waste per tonnes CO2 emitted for each facility. This we combine with the facility data (@src/loaders/eprtr_emissions.py), which states how much CO2 a facility generates. That data is of course not only from a singel process (EAF/BOF) but from the total facility emissions, but it get's us in the ball park of correct magnitude (perhaps a bit overestimated), and hence should get us in the ballpark of generated process wastes. 
+
+When we've got the generated process waste data, we tackle the reported data. We allocate based on emissions (only CO2 for now), and we weight the CO2 based on the amount of generated waste for that process.
+
+This means we don't only have to rely on the reported waste data from the Eurostat's env_wasgen, to get insight into a facillities waste generation. Then we can compare for example reported waste / generated process wastes , to see ratios between facilities. Facilities with relatively higher ratio of reported waste / generated process wastes, should have less mature recovery technology, and could be interesting recovery sources (since they report more waste).
